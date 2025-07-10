@@ -21,8 +21,8 @@ export function Footer() {
       { name: 'Sponsor', href: '/donate' },
     ],
     Legal: [
-      { name: 'Privacy Policy', href: '/privacy-policy' },
       { name: 'Terms of Use', href: '/terms-of-use' },
+      { name: 'Privacy Policy', href: '/privacy-policy' },
       { name: 'Code of Conduct', href: '/code-of-conduct' },
     ],
   };
