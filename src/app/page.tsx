@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Users, Calendar, Rss, HelpCircle } from 'lucide-react';
@@ -257,9 +258,6 @@ export default function Home() {
         <section className="py-16 md:py-24 bg-card">
           <div className="container mx-auto max-w-4xl px-4">
             <div className="text-center mb-12">
-              <div className="inline-block bg-primary/10 p-4 rounded-full">
-                  <HelpCircle className="h-12 w-12 text-primary" />
-              </div>
               <h2 className="mt-4 text-3xl md:text-4xl font-bold font-headline text-primary">Frequently Asked Questions</h2>
               <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
                 Have questions? We've got answers. If you can't find what you're looking for, feel free to contact us.
