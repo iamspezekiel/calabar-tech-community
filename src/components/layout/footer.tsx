@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Linkedin } from 'lucide-react';
 import { Logo } from '@/components/logo';
 
 export function Footer() {
   const socialLinks = [
-    { name: 'GitHub', icon: Github, href: '#' },
+    { name: 'Facebook', icon: Facebook, href: '#' },
     { name: 'Twitter', icon: Twitter, href: '#' },
     { name: 'LinkedIn', icon: Linkedin, href: '#' },
   ];
