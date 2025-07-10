@@ -14,6 +14,7 @@ export function Footer() {
       { name: 'About Us', href: '/about' },
       { name: 'Events', href: '/events' },
       { name: 'Blog', href: '/blog' },
+      { name: 'FAQs', href: '/faq' },
     ],
     Contribute: [
       { name: 'Projects', href: '/projects' },
