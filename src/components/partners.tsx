@@ -10,6 +10,8 @@ const partners = [
 ];
 
 export function Partners() {
+  const duplicatedPartners = [...partners, ...partners]; // Duplicate for seamless loop
+
   return (
     <section className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
@@ -17,21 +19,21 @@ export function Partners() {
         <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
           We are grateful for the support of our partners and sponsors who help make our community thrive.
         </p>
-        <div className="mt-12">
-          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
-            {partners.map((partner) => (
-              <a key={partner.name} href="#" target="_blank" rel="noopener noreferrer" className="relative">
-                <Image
-                  src={partner.logo}
-                  alt={partner.name}
-                  width={140}
-                  height={50}
-                  className="grayscale hover:grayscale-0 transition-all duration-300"
-                  data-ai-hint={partner.dataAiHint}
-                />
-              </a>
-            ))}
-          </div>
+        <div className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+            <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                {duplicatedPartners.map((partner, index) => (
+                    <li key={index}>
+                         <Image
+                            src={partner.logo}
+                            alt={partner.name}
+                            width={140}
+                            height={50}
+                            className="grayscale hover:grayscale-0 transition-all duration-300"
+                            data-ai-hint={partner.dataAiHint}
+                        />
+                    </li>
+                ))}
+            </ul>
         </div>
       </div>
     </section>
