@@ -46,6 +46,13 @@ const faqs = [
   },
 ];
 
+const galleryImages = [
+  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 1', dataAiHint: 'tech meetup' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 2', dataAiHint: 'people coding' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 3', dataAiHint: 'speaker presentation' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 4', dataAiHint: 'group discussion' },
+];
+
 
 export default function Home() {
   const testimonials = [
@@ -214,8 +221,39 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonials Section */}
+        {/* Gallery Preview Section */}
         <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Moments from Our Community</h2>
+            <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
+              A glimpse into our vibrant meetups, workshops, and collaborative sessions.
+            </p>
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+              {galleryImages.map((image, index) => (
+                <div key={index} className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out aspect-video">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out"
+                    data-ai-hint={image.dataAiHint}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="mt-12 text-center">
+              <Button asChild size="lg">
+                <Link href="/gallery">
+                  View Full Gallery <ArrowRight className="ml-2" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-16 md:py-24 bg-card">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">From Our Community</h2>
             <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
@@ -260,7 +298,7 @@ export default function Home() {
         </div>
 
         {/* FAQ Section */}
-        <section className="py-16 md:py-24 bg-card">
+        <section className="py-16 md:py-24">
           <div className="container mx-auto max-w-4xl px-4">
             <div className="text-center mb-12">
               <h2 className="mt-4 text-3xl md:text-4xl font-bold font-headline text-primary">Frequently Asked Questions</h2>
