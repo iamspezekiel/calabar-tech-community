@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Users, Calendar, Rss } from 'lucide-react';
+import { ArrowRight, Users, Calendar, Rss, HelpCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -13,6 +13,36 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
+const faqs = [
+  {
+    question: "What is the Calabar Tech Community?",
+    answer: "The Calabar Tech Community is a group of individuals and organizations in Calabar, Nigeria who are passionate about technology and its potential to transform society. The community provides a platform for tech enthusiasts, entrepreneurs, developers, and investors to connect, share ideas, and collaborate on projects.",
+  },
+  {
+    question: "Who can join the Calabar Tech Community?",
+    answer: "Anyone who is interested in technology and innovation can join the Calabar Tech Community. This includes tech enthusiasts, entrepreneurs, developers, investors, and students.",
+  },
+  {
+    question: "How do I join the Calabar Tech Community?",
+    answer: "You can join the Calabar Tech Community by visiting their website or social media pages, and following the instructions to become a member. You may be required to fill out a membership form or attend a community event to become a member.",
+  },
+  {
+    question: "What are the benefits of joining the Calabar Tech Community?",
+    answer: "By joining the Calabar Tech Community, you will have the opportunity to network with like-minded individuals, attend events and workshops, learn new skills, collaborate on projects, and stay up-to-date with the latest trends and developments in the tech industry.",
+  },
+  {
+    question: "What kind of events does the Calabar Tech Community organize?",
+    answer: "The Calabar Tech Community organizes a variety of events, including hackathons, workshops, meetups, and conferences. These events cover topics such as programming, entrepreneurship, data science, artificial intelligence, and blockchain.",
+  },
+];
+
 
 export default function Home() {
   const testimonials = [
@@ -219,6 +249,35 @@ export default function Home() {
             </Carousel>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 md:py-24 bg-card">
+          <div className="container mx-auto max-w-4xl px-4">
+            <div className="text-center mb-12">
+              <div className="inline-block bg-primary/10 p-4 rounded-full">
+                  <HelpCircle className="h-12 w-12 text-primary" />
+              </div>
+              <h2 className="mt-4 text-3xl md:text-4xl font-bold font-headline text-primary">Frequently Asked Questions</h2>
+              <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+                Have questions? We've got answers. If you can't find what you're looking for, feel free to contact us.
+              </p>
+            </div>
+
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem value={`item-${index}`} key={index}>
+                  <AccordionTrigger className="text-left text-lg hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
       </main>
     </div>
   );
