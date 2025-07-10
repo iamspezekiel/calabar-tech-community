@@ -104,10 +104,12 @@ export default function EventsPage() {
 
       <section className="mt-16">
         <Tabs defaultValue="upcoming" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
-            <TabsTrigger value="upcoming">Upcoming Events</TabsTrigger>
-            <TabsTrigger value="past">Past Events</TabsTrigger>
-          </TabsList>
+          <div className="flex justify-center">
+            <TabsList>
+              <TabsTrigger value="upcoming">Upcoming Events</TabsTrigger>
+              <TabsTrigger value="past">Past Events</TabsTrigger>
+            </TabsList>
+          </div>
           <TabsContent value="upcoming" className="mt-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {upcomingEvents.map((event) => (
