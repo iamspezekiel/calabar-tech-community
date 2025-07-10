@@ -14,7 +14,6 @@ export function Footer() {
       { name: 'About Us', href: '/about' },
       { name: 'Events', href: '/events' },
       { name: 'Blog', href: '/blog' },
-      { name: 'Code of Conduct', href: '/code-of-conduct' },
     ],
     Contribute: [
       { name: 'Projects', href: '/projects' },
@@ -24,6 +23,7 @@ export function Footer() {
     Legal: [
       { name: 'Privacy Policy', href: '/privacy-policy' },
       { name: 'Terms of Use', href: '/terms-of-use' },
+      { name: 'Code of Conduct', href: '/code-of-conduct' },
     ],
   };
 
