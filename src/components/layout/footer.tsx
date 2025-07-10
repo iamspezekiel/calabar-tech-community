@@ -12,9 +12,10 @@ export function Footer() {
   const footerLinks = {
     Community: [
       { name: 'About Us', href: '/about' },
-      { name: 'Events', href: '/events' },
-      { name: 'Gallery', href: '/gallery' },
-      { name: 'Blog', href: '/blog' },
+      { name: 'Contact us', href: '/contact' },
+      { name: 'Our Events', href: '/events' },
+      { name: 'Our Gallery', href: '/gallery' },
+      { name: 'Join Us', href: '/about' },
     ],
     Contribute: [
       { name: 'Donate', href: '/donate' },
