@@ -13,6 +13,7 @@ export function Footer() {
     Community: [
       { name: 'About Us', href: '/about' },
       { name: 'Events', href: '/events' },
+      { name: 'Gallery', href: '/gallery' },
       { name: 'Blog', href: '/blog' },
     ],
     Contribute: [
