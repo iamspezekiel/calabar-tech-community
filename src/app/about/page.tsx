@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Heart, Rocket, Lightbulb, ShieldCheck } from 'lucide-react';
 import { Partners } from '@/components/partners';
+import { Separator } from '@/components/ui/separator';
 
 const teamMembers = [
   { name: 'John Doe', role: 'Community Lead', avatar: 'https://placehold.co/150x150.png', dataAiHint: "man smiling" },
@@ -120,7 +121,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mt-20">
+      <div className="my-24">
+        <Separator />
+      </div>
+
+      <section>
         <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Meet The Team</h2>
         <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
           The passionate individuals leading our community forward.
