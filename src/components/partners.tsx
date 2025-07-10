@@ -13,7 +13,7 @@ export function Partners() {
   const duplicatedPartners = [...partners, ...partners]; // Duplicate for seamless loop
 
   return (
-    <section className="py-20 bg-card">
+    <section className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Our Partners & Sponsors</h2>
         <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
