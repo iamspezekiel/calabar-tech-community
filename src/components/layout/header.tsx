@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 
@@ -65,6 +65,8 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full">
+              <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
+              <SheetDescription className="sr-only">A list of links to navigate the site.</SheetDescription>
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between border-b pb-4">
                   <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
