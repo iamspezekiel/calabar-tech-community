@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -95,7 +96,9 @@ export default function EventsPage() {
         </p>
         <div className="mt-8 flex justify-center gap-4">
             <Button>Attend an Event</Button>
-            <Button variant="outline">Host an Event</Button>
+            <Button variant="outline" asChild>
+              <Link href="/contact">Host an Event</Link>
+            </Button>
         </div>
       </section>
 
