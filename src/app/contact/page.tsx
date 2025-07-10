@@ -37,7 +37,7 @@ export default function ContactPage() {
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold font-headline">Our Hub</h5>
+                <h3 className="text-xl font-semibold font-headline">Our Hub</h3>
                 <p className="text-muted-foreground">While we often meet online, you can find us at our physical hub for scheduled events.</p>
                 <p className="text-muted-foreground mt-1">123 Tech Avenue, Calabar, Nigeria</p>
               </div>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 <Phone className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold font-headline">Social Media</h5>
+                <h3 className="text-xl font-semibold font-headline">Social Media</h3>
                 <p className="text-muted-foreground">Follow us on social media to stay updated with our latest news and events.</p>
                 <div className="flex space-x-4 mt-2">
                     <a href="#" className="text-accent hover:underline">Twitter</a>
