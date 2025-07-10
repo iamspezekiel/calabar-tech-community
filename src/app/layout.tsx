@@ -8,6 +8,9 @@ import { Toaster } from "@/components/ui/toaster"
 export const metadata: Metadata = {
   title: 'Calabar Tech Hub',
   description: 'A grassroots tech movement based in Calabar, Nigeria, fostering creativity, innovation, and community inclusion.',
+  icons: {
+    icon: 'https://iili.io/FEu3ivV.png',
+  },
 };
 
 export default function RootLayout({
