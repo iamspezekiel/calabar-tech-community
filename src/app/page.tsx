@@ -19,6 +19,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Partners } from '@/components/partners';
 
 const faqs = [
   {
@@ -249,6 +250,8 @@ export default function Home() {
             </Carousel>
           </div>
         </section>
+
+        <Partners />
 
         {/* FAQ Section */}
         <section className="py-16 md:py-24 bg-card">

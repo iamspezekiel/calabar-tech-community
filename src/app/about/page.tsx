@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Heart, Rocket, Lightbulb, ShieldCheck } from 'lucide-react';
+import { Partners } from '@/components/partners';
 
 const teamMembers = [
   { name: 'John Doe', role: 'Community Lead', avatar: 'https://placehold.co/150x150.png', dataAiHint: "man smiling" },
@@ -139,6 +140,8 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
+
+      <Partners />
     </div>
   );
 }
