@@ -3,7 +3,7 @@ import Image from 'next/image';
 const partners = [
   { name: 'Google', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Google logo' },
   { name: 'Microsoft', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Microsoft logo' },
-  { name: 'Firebase', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Firebase logo' },
+  { name: 'Hosting Company', logo: 'https://placehold.co/150x60.png', dataAiHint: 'logo' },
   { name: 'Paystack', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Paystack logo' },
   { name: 'Andela', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Andela logo' },
   { name: 'Flutterwave', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Flutterwave logo' },

@@ -11,7 +11,7 @@ const projects = [
     description: 'The very website you are browsing! Built with Next.js and Tailwind CSS, it serves as our digital home.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'website interface',
-    tags: ['Next.js', 'React', 'Tailwind CSS', 'Firebase'],
+    tags: ['Next.js', 'React', 'Tailwind CSS'],
     githubUrl: '#',
   },
   {
