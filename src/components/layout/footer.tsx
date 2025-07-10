@@ -22,7 +22,8 @@ export function Footer() {
       { name: 'Sponsor', href: '/donate' },
       { name: 'Volunteer', href: '/volunteer' },
     ],
-    Legal: [
+    Resources: [
+      { name: 'Our Blog', href: '/blog' },
       { name: 'Terms of Use', href: '/terms-of-use' },
       { name: 'Privacy Policy', href: '/privacy-policy' },
       { name: 'Code of Conduct', href: '/code-of-conduct' },
