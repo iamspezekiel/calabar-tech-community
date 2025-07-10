@@ -111,9 +111,6 @@ export default function Home() {
               <Button asChild size="lg" variant="secondary">
                 <Link href="/events">See Events</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
-                <Link href="/donate">Donate</Link>
-              </Button>
             </div>
           </div>
         </section>
