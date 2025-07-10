@@ -17,10 +17,10 @@ export function Footer() {
       { name: 'Blog', href: '/blog' },
     ],
     Contribute: [
-      { name: 'Projects', href: '/projects' },
       { name: 'Donate', href: '/donate' },
-      { name: 'Volunteer', href: '/volunteer' },
+      { name: 'Projects', href: '/projects' },
       { name: 'Sponsor', href: '/donate' },
+      { name: 'Volunteer', href: '/volunteer' },
     ],
     Legal: [
       { name: 'Terms of Use', href: '/terms-of-use' },
