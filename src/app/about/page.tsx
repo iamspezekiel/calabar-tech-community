@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Heart, Rocket, Lightbulb, ShieldCheck } from 'lucide-react';
 
 const teamMembers = [
   { name: 'John Doe', role: 'Community Lead', avatar: 'https://placehold.co/150x150.png', dataAiHint: "man smiling" },
@@ -8,6 +9,29 @@ const teamMembers = [
   { name: 'David Lee', role: 'Lead Developer', avatar: 'https://placehold.co/150x150.png', dataAiHint: "man glasses" },
   { name: 'Sarah Green', role: 'Content Strategist', avatar: 'https://placehold.co/150x150.png', dataAiHint: "woman smiling" },
 ];
+
+const coreValues = [
+    {
+        icon: Heart,
+        title: "Inclusivity",
+        description: "We strive to create a welcoming and supportive environment that embraces diversity and provides equal access to resources, opportunities, and connections to all members of our community."
+    },
+    {
+        icon: Rocket,
+        title: "Empowerment",
+        description: "We aim to provide individuals with the skills, knowledge, and resources they need to succeed in the tech industry and achieve their personal and professional goals."
+    },
+    {
+        icon: Lightbulb,
+        title: "Innovation",
+        description: "We encourage creativity, curiosity, and experimentation in the pursuit of new ideas, methods, and technologies that can drive positive change and advancement in the industry."
+    },
+    {
+        icon: ShieldCheck,
+        title: "Accountability",
+        description: "We hold ourselves and our community members to high ethical and professional standards, and we are committed to transparency, honesty, and responsibility in all our interactions and endeavors."
+    }
+]
 
 export default function AboutPage() {
   return (
@@ -73,6 +97,27 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="mt-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Our Core Values</h2>
+        <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
+          The principles that guide our community's actions and decisions.
+        </p>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {coreValues.map((value) => (
+            <Card key={value.title} className="bg-card/50">
+              <CardHeader className="flex flex-row items-center gap-4">
+                <div className="p-3 bg-primary/10 rounded-full">
+                  <value.icon className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="font-headline text-xl">{value.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{value.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
 
       <section className="mt-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Meet The Team</h2>
