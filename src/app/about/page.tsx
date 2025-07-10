@@ -74,6 +74,28 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="mt-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Our Core Values</h2>
+        <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
+          The principles that guide our community's actions and decisions.
+        </p>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {coreValues.map((value) => (
+            <Card key={value.title} className="bg-card/50">
+              <CardHeader className="flex flex-row items-center gap-4">
+                <div className="p-3 bg-primary/10 rounded-full">
+                  <value.icon className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="font-headline text-xl">{value.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{value.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
       <section className="mt-20 text-center">
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Meet The Founder</h2>
       </section>
@@ -94,28 +116,6 @@ export default function AboutPage() {
           <p className="mt-2 text-muted-foreground">
              As a skilled community builder, Amani has demonstrated exceptional proficiency in fostering strong relationships within the tech industry. Moreover, he has devoted his time to mentoring aspiring technologists, offering guidance and assistance in navigating their career paths. Overall, Amani's contributions to the tech community have been highly valuable, and he is widely regarded as a respected figure in the field.
           </p>
-        </div>
-      </section>
-
-      <section className="mt-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Our Core Values</h2>
-        <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
-          The principles that guide our community's actions and decisions.
-        </p>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {coreValues.map((value) => (
-            <Card key={value.title} className="bg-card/50">
-              <CardHeader className="flex flex-row items-center gap-4">
-                <div className="p-3 bg-primary/10 rounded-full">
-                  <value.icon className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="font-headline text-xl">{value.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{value.description}</p>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </section>
 
