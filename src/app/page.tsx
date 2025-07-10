@@ -43,13 +43,23 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 bg-card">
-           <div className="absolute inset-0 bg-primary/5"></div>
-           <div className="container mx-auto px-4 text-center relative">
-            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-primary">
+        <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white overflow-hidden">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="absolute z-0 w-auto min-w-full min-h-full max-w-none"
+          >
+            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/TechForGood.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white drop-shadow-md">
               Building the Future of Tech in Calabar.
             </h1>
-            <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+            <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-neutral-200 drop-shadow-sm">
               Calabar Tech Community (CTC) is a grassroots movement fostering creativity, innovation, and a forward-thinking tech culture in Nigeria.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -61,7 +71,7 @@ export default function Home() {
               <Button asChild size="lg" variant="secondary">
                 <Link href="/events">See Events</Link>
               </Button>
-              <Button asChild size="lg" variant="outline">
+              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
                 <Link href="/donate">Donate</Link>
               </Button>
             </div>
