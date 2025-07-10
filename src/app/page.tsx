@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Users, Calendar, Rss, HelpCircle } from 'lucide-react';
+import { ArrowRight, Users, Calendar, Rss } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -21,6 +21,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Partners } from '@/components/partners';
+import { Separator } from '@/components/ui/separator';
 
 const faqs = [
   {
@@ -253,6 +254,10 @@ export default function Home() {
         </section>
 
         <Partners />
+        
+        <div className="container mx-auto px-4">
+          <Separator />
+        </div>
 
         {/* FAQ Section */}
         <section className="py-16 md:py-24 bg-card">
