@@ -19,6 +19,7 @@ export function Footer() {
     Contribute: [
       { name: 'Projects', href: '/projects' },
       { name: 'Donate', href: '/donate' },
+      { name: 'Volunteer', href: '/volunteer' },
       { name: 'Sponsor', href: '/donate' },
     ],
     Legal: [
