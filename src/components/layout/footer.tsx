@@ -15,7 +15,6 @@ export function Footer() {
       { name: 'Contact us', href: '/contact' },
       { name: 'Our Events', href: '/events' },
       { name: 'Our Gallery', href: '/gallery' },
-      { name: 'Join Us', href: '/about' },
     ],
     Contribute: [
       { name: 'Donate', href: '/donate' },
