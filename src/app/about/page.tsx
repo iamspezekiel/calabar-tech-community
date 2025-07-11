@@ -57,12 +57,17 @@ export default function AboutPage() {
 
       <section className="mt-16 grid md:grid-cols-2 gap-12">
         <div>
-          <h2 className="text-3xl font-bold font-headline text-primary">Our Mission & Vision</h2>
+          <h2 className="text-3xl font-bold font-headline text-primary">Our Mission</h2>
           <p className="mt-4 text-muted-foreground">
-            Our mission is to empower individuals with technology skills, foster collaboration, and drive innovation within Calabar. We envision a future where Calabar is a recognized hub for tech talent and entrepreneurship in Africa.
+            Our mission is to empower individuals with technology skills, foster collaboration, and drive innovation within Calabar. 
+            We believe in the power of community to create opportunities and solve local challenges through technology.
           </p>
+        </div>
+        <div>
+          <h2 className="text-3xl font-bold font-headline text-primary">Our Vision</h2>
           <p className="mt-4 text-muted-foreground">
-            We believe in the power of community to create opportunities and solve local challenges through technology. By providing access to resources, mentorship, and a supportive network, we aim to unlock the potential of every aspiring tech professional in our city.
+            We envision a future where Calabar is a recognized hub for tech talent and entrepreneurship in Africa. 
+            By providing access to resources, mentorship, and a supportive network, we aim to unlock the potential of every aspiring tech professional in our city.
           </p>
         </div>
         <div>
