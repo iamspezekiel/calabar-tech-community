@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Heart, Rocket, Lightbulb, ShieldCheck } from 'lucide-react';
+import { Heart, Rocket, Lightbulb, ShieldCheck, Milestone } from 'lucide-react';
 import { Partners } from '@/components/partners';
 import { Separator } from '@/components/ui/separator';
 
@@ -35,6 +35,40 @@ const coreValues = [
     }
 ]
 
+const historyMilestones = [
+  {
+    year: '2018',
+    title: 'Humble Beginnings',
+    description: 'A small group of passionate developers starts meeting in a local coffee shop to share knowledge and discuss the future of tech in Calabar, laying the foundation for what would become CTC.',
+  },
+  {
+    year: '2019',
+    title: 'First Official Meetup',
+    description: 'The community formalizes its structure and hosts its first official monthly tech meetup, attracting over 50 attendees and signaling a strong local interest in technology.',
+  },
+  {
+    year: '2020',
+    title: 'Going Virtual',
+    description: 'In response to global changes, CTC successfully transitions to virtual events, hosting workshops and webinars that reached an even wider audience beyond Calabar.',
+  },
+  {
+    year: '2021',
+    title: 'Hackathon for Social Good',
+    description: 'We hosted our first annual hackathon, challenging teams to build innovative solutions for local social and economic problems, leading to several impactful community projects.',
+  },
+  {
+    year: '2022',
+    title: 'Partnership & Growth',
+    description: 'Secured key partnerships with tech companies and educational institutions, allowing us to expand our training programs and provide more resources to our members.',
+  },
+  {
+    year: '2024',
+    title: 'Expanding Horizons',
+    description: 'Celebrating over 500 members, the community launches a mentorship program and an open-source contribution drive, solidifying its role as a key player in the regional tech ecosystem.',
+  },
+];
+
+
 export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-16">
@@ -55,7 +89,7 @@ export default function AboutPage() {
         />
       </section>
 
-      <section className="mt-16 grid md:grid-cols-2 gap-12">
+      <section className="mt-16 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-3xl font-bold font-headline text-primary">Our Mission</h2>
           <p className="mt-4 text-muted-foreground">
@@ -70,14 +104,41 @@ export default function AboutPage() {
             By providing access to resources, mentorship, and a supportive network, we aim to unlock the potential of every aspiring tech professional in our city.
           </p>
         </div>
-        <div>
-          <h2 className="text-3xl font-bold font-headline text-primary">Our History</h2>
-          <p className="mt-4 text-muted-foreground">
-            Founded in 2018 by a small group of passionate developers, the Calabar Tech Community started as an informal gathering to share knowledge. It has since grown into a vibrant movement with hundreds of members, regular events, and impactful projects.
-          </p>
-          <p className="mt-4 text-muted-foreground">
-            From humble beginnings in a local coffee shop, we've expanded our reach through workshops, hackathons, and partnerships with local businesses and educational institutions.
-          </p>
+      </section>
+      
+      <section className="mt-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Our History</h2>
+        <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
+          A journey of passion, growth, and community impact since 2018.
+        </p>
+        <div className="mt-12 max-w-4xl mx-auto">
+          <div className="relative">
+            <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border"></div>
+            {historyMilestones.map((milestone, index) => (
+              <div key={index} className="relative mb-12">
+                <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-background border-2 border-primary rounded-full flex items-center justify-center">
+                  <Milestone className="w-4 h-4 text-primary" />
+                </div>
+                <div className={`flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                  <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
+                    <p className="text-2xl font-bold font-headline text-primary">{milestone.year}</p>
+                  </div>
+                </div>
+                <div className={`flex ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
+                  <div className="w-5/12">
+                    <Card className={`shadow-lg ${index % 2 === 0 ? 'ml-8' : 'mr-8'}`}>
+                        <CardHeader>
+                            <CardTitle>{milestone.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-muted-foreground">{milestone.description}</p>
+                        </CardContent>
+                    </Card>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
