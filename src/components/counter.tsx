@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-export function Counter({ target, duration = 2000 }: { target: number, duration?: number }) {
+export function Counter({ target, duration = 2000, suffix = "" }: { target: number, duration?: number, suffix?: string }) {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
@@ -20,5 +20,5 @@ export function Counter({ target, duration = 2000 }: { target: number, duration?
     return () => clearInterval(timer)
   }, [target, duration])
 
-  return <span>{count}</span>
+  return <span>{count}{suffix}</span>
 }

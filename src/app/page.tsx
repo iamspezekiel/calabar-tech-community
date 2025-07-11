@@ -133,7 +133,7 @@ export default function Home() {
                   <CardHeader>
                     <Users className="mx-auto h-10 w-10 text-accent" />
                     <CardTitle className="text-4xl font-bold font-headline mt-2">
-                      <Counter target={500} />+
+                      <Counter target={500} suffix="+" />
                     </CardTitle>
                     <CardDescription>Community Members</CardDescription>
                   </CardHeader>
@@ -142,7 +142,7 @@ export default function Home() {
                   <CardHeader>
                     <Calendar className="mx-auto h-10 w-10 text-accent" />
                     <CardTitle className="text-4xl font-bold font-headline mt-2">
-                       <Counter target={50} />+
+                       <Counter target={50} suffix="+" />
                     </CardTitle>
                     <CardDescription>Events Hosted</CardDescription>
                   </CardHeader>
