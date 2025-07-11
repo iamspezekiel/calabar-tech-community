@@ -98,29 +98,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mt-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">Meet The Founder</h2>
-      </section>
-
-      <section className="mt-12 grid md:grid-cols-3 gap-8 items-center">
-        <div className="md:col-span-1 flex justify-center">
-            <Avatar className="w-48 h-48 mx-auto border-4 border-accent/20">
-              <AvatarImage src="https://placehold.co/200x200.png" alt="Amani Kanu" data-ai-hint="man developer" />
-              <AvatarFallback>AK</AvatarFallback>
-            </Avatar>
-        </div>
-        <div className="md:col-span-2 text-left">
-          <h3 className="text-2xl font-bold font-headline">Amani Kanu</h3>
-          <p className="text-lg text-accent">Co-founder</p>
-          <p className="mt-4 text-muted-foreground">
-            Amani is an accomplished software engineer with over four years of experience developing robust web applications for both domestic and international clients. He is also the founder of the Calabar Tech Community, which has played a pivotal role in providing access to technical skills and employment opportunities for numerous tech enthusiasts.
-          </p>
-          <p className="mt-2 text-muted-foreground">
-             As a skilled community builder, Amani has demonstrated exceptional proficiency in fostering strong relationships within the tech industry. Moreover, he has devoted his time to mentoring aspiring technologists, offering guidance and assistance in navigating their career paths. Overall, Amani's contributions to the tech community have been highly valuable, and he is widely regarded as a respected figure in the field.
-          </p>
-        </div>
-      </section>
-
       <div className="my-24">
         <Separator />
       </div>
