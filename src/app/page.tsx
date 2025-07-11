@@ -51,6 +51,8 @@ const galleryImages = [
   { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 2', dataAiHint: 'people coding' },
   { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 3', dataAiHint: 'speaker presentation' },
   { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 4', dataAiHint: 'group discussion' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 5', dataAiHint: 'workshop learning' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 6', dataAiHint: 'hackathon team' },
 ];
 
 
@@ -225,19 +227,35 @@ export default function Home() {
             <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
               A glimpse into our vibrant meetups, workshops, and collaborative sessions.
             </p>
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-              {galleryImages.map((image, index) => (
-                <div key={index} className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out aspect-video">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={600}
-                    height={400}
-                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out"
-                    data-ai-hint={image.dataAiHint}
-                  />
-                </div>
-              ))}
+            <div className="mt-12">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full max-w-6xl mx-auto"
+              >
+                <CarouselContent>
+                  {galleryImages.map((image, index) => (
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                      <div className="p-1">
+                        <div className="overflow-hidden rounded-lg shadow-lg aspect-video">
+                          <Image
+                            src={image.src}
+                            alt={image.alt}
+                            width={600}
+                            height={400}
+                            className="w-full h-full object-cover"
+                            data-ai-hint={image.dataAiHint}
+                          />
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
             </div>
             <div className="mt-12 text-center">
               <Button asChild size="lg">
