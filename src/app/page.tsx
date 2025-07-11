@@ -104,7 +104,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Button asChild size="lg">
-                <Link href="/about">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScy4nFHFFml0N-BN6mxcctqKoqyIF4UwJ1Us-KfLZecn0MpIg/viewform" target="_blank" rel="noopener noreferrer">
                   Join Us <ArrowRight className="ml-2" />
                 </Link>
               </Button>
