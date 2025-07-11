@@ -59,6 +59,8 @@ const heroImages = [
     { src: 'https://placehold.co/1920x1080.png', alt: 'Community collaboration', dataAiHint: 'people working together' },
     { src: 'https://placehold.co/1920x1080.png', alt: 'Tech presentation', dataAiHint: 'conference speaker' },
     { src: 'https://placehold.co/1920x1080.png', alt: 'Members networking', dataAiHint: 'professional networking' },
+    { src: 'https://placehold.co/1920x1080.png', alt: 'Coding workshop', dataAiHint: 'coding workshop' },
+    { src: 'https://placehold.co/1920x1080.png', alt: 'Team brainstorming', dataAiHint: 'team meeting' },
 ];
 
 
