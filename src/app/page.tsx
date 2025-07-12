@@ -78,7 +78,7 @@ export default function Home() {
   const recentPost = blogPosts[0];
   const featuredStartup = startups[0];
   const upcomingEvent = upcomingEvents[0];
-  const homeGalleryImages = galleryImages.slice(0, 8);
+  const homeGalleryImages = galleryImages.slice(0, 12);
 
 
   return (
