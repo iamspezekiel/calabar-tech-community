@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/accordion"
 import { Partners } from '@/components/partners';
 import { Separator } from '@/components/ui/separator';
+import { blogPosts } from '@/lib/blog-data';
 
 const faqs = [
   {
@@ -81,6 +82,8 @@ export default function Home() {
       text: "CTC provides a platform to collaborate on real-world projects. It's the best place to grow as a tech professional in Calabar."
     },
   ];
+
+  const recentPost = blogPosts[0];
 
   return (
     <div className="flex flex-col min-h-dvh">
@@ -189,11 +192,11 @@ export default function Home() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <Image src="https://placehold.co/600x400.png" alt="Blog" width={600} height={400} className="rounded-lg mb-4" data-ai-hint="person coding" />
-                  <h3 className="text-xl font-semibold font-headline">Getting Started with Next.js 14</h3>
-                  <p className="text-muted-foreground mt-2">A comprehensive guide for beginners looking to dive into the latest version of Next.js.</p>
+                  <Image src={recentPost.image} alt={recentPost.title} width={600} height={400} className="rounded-lg mb-4" data-ai-hint={recentPost.dataAiHint} />
+                  <h3 className="text-xl font-semibold font-headline">{recentPost.title}</h3>
+                  <p className="text-muted-foreground mt-2">{recentPost.excerpt}</p>
                   <Button asChild variant="link" className="px-0 mt-4">
-                    <Link href="/blog">Read More <ArrowRight className="ml-2" /></Link>
+                    <Link href={recentPost.slug}>Read More <ArrowRight className="ml-2" /></Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -340,6 +343,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
-    
