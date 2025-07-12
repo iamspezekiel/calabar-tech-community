@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { blogPosts } from '@/lib/blog-data';
 
-const categories = ['All', 'Frontend', 'Backend', 'Data', 'Career', 'Design'];
+const categories = ['All', 'Frontend', 'Backend', 'Data', 'Career', 'Design', 'AI', 'DevOps', 'Mobile', 'Community'];
 
 export default function BlogPage() {
   return (
