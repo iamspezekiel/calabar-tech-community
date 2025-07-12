@@ -12,7 +12,7 @@ export default function StartupsPage() {
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">Community Startups</h1>
         <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
-          Discover the innovative startups and projects born from our community. From open-source tools to impactful applications. Looking to invest or explore Calabar innovations.
+          Explore the innovative ventures born from our vibrant community. From open-source projects to market-ready applications, discover the next wave of Calabar-based innovation and investment opportunities.
         </p>
         <div className="mt-8 flex justify-center">
             <Button asChild size="lg">
