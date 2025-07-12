@@ -2,7 +2,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Skeleton } from '@/components/ui/skeleton';
 import {
@@ -13,6 +13,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Maximize } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const galleryImages = [
   { src: 'https://i.ibb.co/hxTYvhn1/IMG-6884.jpg', alt: 'Calabar Tech Community group photo', dataAiHint: 'hackathon team' },
