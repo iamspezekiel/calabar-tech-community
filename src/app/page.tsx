@@ -142,7 +142,7 @@ export default function Home() {
                   <CardHeader>
                     <Calendar className="mx-auto h-10 w-10 text-accent" />
                     <CardTitle className="text-4xl font-bold font-headline mt-2">
-                       <Counter target={50} suffix="+" />
+                       <Counter target={13} suffix="+" />
                     </CardTitle>
                     <CardDescription>Events Hosted</CardDescription>
                   </CardHeader>
