@@ -79,5 +79,13 @@ export const startups = [
     dataAiHint: 'digital services',
     tags: ['SaaS', 'Digital', 'Technology'],
     url: 'https://gadlock.com',
+  },
+  {
+    title: 'MyAza',
+    description: 'An innovative platform for financial services and technology.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'financial technology',
+    tags: ['FinTech', 'Digital Wallet', 'Payments'],
+    url: 'https://myaza.co',
   }
 ];
