@@ -6,10 +6,10 @@ import { Partners } from '@/components/partners';
 import { Separator } from '@/components/ui/separator';
 
 const teamMembers = [
-  { name: 'Florence Arong', role: 'Lead Developer', avatar: 'https://placehold.co/150x150.png', dataAiHint: "man smiling" },
+  { name: 'Amani Kanu', role: 'Lead Developer', avatar: 'https://placehold.co/150x150.png', dataAiHint: "man smiling" },
   { name: 'Grace Effiong', role: 'Events Coordinator', avatar: 'https://placehold.co/150x150.png', dataAiHint: "woman portrait" },
   { name: 'Bassey Archibong', role: 'Community Lead', avatar: 'https://placehold.co/150x150.png', dataAiHint: "man glasses" },
-  { name: 'Daniel Joshua', role: 'Content Strategist', avatar: 'https://placehold.co/150x150.png', dataAiHint: "woman smiling" },
+  { name: 'Florence Arong', role: 'Partnership Strategist', avatar: 'https://placehold.co/150x150.png', dataAiHint: "woman smiling" },
 ];
 
 const coreValues = [

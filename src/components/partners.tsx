@@ -9,9 +9,9 @@ const partners = [
   { name: 'Flutterwave', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Flutterwave logo' },
 ];
 
-export function Partners() {
-  const duplicatedPartners = [...partners, ...partners]; // Duplicate for seamless loop
+const duplicatedPartners = [...partners, ...partners]; // Duplicate for seamless loop
 
+export function Partners() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
