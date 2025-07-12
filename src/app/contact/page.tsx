@@ -1,5 +1,5 @@
 import { ContactForm } from '@/components/contact-form';
-import { Mail, Phone, MapPin, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Mail, Users, MapPin, Twitter, Linkedin, Facebook } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -45,7 +45,7 @@ export default function ContactPage() {
             
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
-                <Phone className="h-6 w-6 text-primary" />
+                <Users className="h-6 w-6 text-primary" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold font-headline">Social Media</h3>
