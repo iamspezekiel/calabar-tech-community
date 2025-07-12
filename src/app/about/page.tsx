@@ -81,7 +81,7 @@ export default function AboutPage() {
 
       <section className="mt-16">
         <Image 
-          src="https://placehold.co/1200x600.png" 
+          src="https://i.ibb.co/9BBW8Q8/IMG-2228.jpg" 
           alt="Calabar Tech Community group photo" 
           width={1200} height={600} 
           className="rounded-lg shadow-lg mx-auto"
