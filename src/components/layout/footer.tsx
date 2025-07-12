@@ -1,23 +1,11 @@
 import Link from 'next/link';
-import { Facebook, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Linkedin } from 'lucide-react';
 import { Logo } from '@/components/logo';
-
-const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 50 50"
-      width="100px"
-      height="100px"
-      {...props}
-    >
-      <path d="M 1 4.5 L 21.5 25 L 1 45.5 L 4.5 49 L 25 28.5 L 45.5 49 L 49 45.5 L 28.5 25 L 49 4.5 L 45.5 1 L 25 21.5 L 4.5 1 L 1 4.5 z" />
-    </svg>
-  );
 
 export function Footer() {
   const socialLinks = [
     { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/techCalabar' },
-    { name: 'Twitter', icon: XIcon, href: 'https://twitter.com/tech_calabar' },
+    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/tech_calabar' },
     { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/calabar-tech-community/' },
   ];
 
@@ -64,7 +52,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <social.icon className="h-6 w-6 fill-current" />
+                  <social.icon className="h-6 w-6" />
                 </a>
               ))}
             </div>
