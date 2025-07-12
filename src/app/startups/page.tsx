@@ -7,27 +7,27 @@ import Image from 'next/image';
 
 const startups = [
   {
-    title: 'IsabiVTU',
+    title: 'IsabiVTU Technology',
     description: 'A platform for seamless virtual top-up and bill payments. Making everyday transactions easier.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'fintech app',
-    tags: ['FinTech', 'E-commerce', 'Mobile Payments'],
+    tags: ['FinTech', 'Bill Payment', 'Mobile Wallet'],
     url: 'https://isabivtu.com.ng',
   },
   {
-    title: 'IsabiWP',
-    description: 'Specialized WordPress services, offering custom themes, plugins, and performance optimization.',
+    title: 'IsabiWP Cloud Nigeria',
+    description: 'A web hosting provider dedicated to providing premium web hosting solutions in Africa',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'wordpress development',
-    tags: ['WordPress', 'PHP', 'Web Development'],
+    tags: ['Web Hosting', 'Domain Name', 'SSL'],
     url: 'https://isabiwp.com.ng',
   },
   {
-    title: 'IsabiPay',
-    description: 'A secure and reliable payment gateway solution for businesses in Nigeria.',
+    title: 'IsabiPay Technology',
+    description: 'A all in one payment solution for businesses and individual in Nigeria.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'payment gateway',
-    tags: ['Payment', 'API', 'Security'],
+    tags: ['Payment', 'API', 'Gateway'],
     url: 'https://isabipay.com.ng',
   },
 ];

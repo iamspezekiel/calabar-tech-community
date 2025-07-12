@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster"
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Calabar Tech Hub',
@@ -32,6 +33,19 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
+        <Script id="isabichat-widget" strategy="lazyOnload">
+          {`
+            var Widget_API=Widget_API||{}, Widget_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src="https://isabichat.online/api/livechat/widget/89CK7S42S8KRU2E";
+            s1.charset="UTF-8";
+            s1.setAttribute("crossorigin","*");
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );
