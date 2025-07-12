@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Card } from '@/components/ui/card';
 
 const partners = [
   { name: 'Partner 1', logo: 'https://i.ibb.co/23B5pmFs/20240120-080058.png', dataAiHint: 'partner logo' },
@@ -19,9 +20,6 @@ const sponsors = [
   { name: 'Sponsor 7', logo: 'https://i.ibb.co/9HVyPnJG/20250712-050257.png', dataAiHint: 'sponsor logo' },
 ];
 
-const duplicatedPartners = [...partners, ...partners]; // Duplicate for seamless loop
-const duplicatedSponsors = [...sponsors, ...sponsors]; // Duplicate for seamless loop
-
 export function Partners() {
   return (
     <section className="py-20">
@@ -30,42 +28,38 @@ export function Partners() {
         <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
           We are grateful for the support of our partners who help make our community thrive.
         </p>
-        <div className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-            <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                {duplicatedPartners.map((partner, index) => (
-                    <li key={index}>
-                         <Image
-                            src={partner.logo}
-                            alt={partner.name}
-                            width={140}
-                            height={50}
-                            className="transition-all duration-300 object-contain"
-                            data-ai-hint={partner.dataAiHint}
-                        />
-                    </li>
-                ))}
-            </ul>
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {partners.map((partner, index) => (
+            <Card key={index} className="p-6 flex items-center justify-center aspect-video hover:shadow-lg transition-shadow">
+              <Image
+                src={partner.logo}
+                alt={partner.name}
+                width={140}
+                height={70}
+                className="object-contain"
+                data-ai-hint={partner.dataAiHint}
+              />
+            </Card>
+          ))}
         </div>
 
         <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary mt-20">Our Sponsors</h2>
         <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
           We are also grateful for the support of our sponsors.
         </p>
-        <div className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-            <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" style={{ animationDirection: 'reverse' }}>
-                {duplicatedSponsors.map((sponsor, index) => (
-                    <li key={index}>
-                         <Image
-                            src={sponsor.logo}
-                            alt={sponsor.name}
-                            width={140}
-                            height={50}
-                            className="transition-all duration-300 object-contain"
-                            data-ai-hint={sponsor.dataAiHint}
-                        />
-                    </li>
-                ))}
-            </ul>
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {sponsors.map((sponsor, index) => (
+            <Card key={index} className="p-6 flex items-center justify-center aspect-video hover:shadow-lg transition-shadow">
+              <Image
+                src={sponsor.logo}
+                alt={sponsor.name}
+                width={140}
+                height={70}
+                className="object-contain"
+                data-ai-hint={sponsor.dataAiHint}
+              />
+            </Card>
+          ))}
         </div>
       </div>
     </section>
