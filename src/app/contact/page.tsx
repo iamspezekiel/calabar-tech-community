@@ -40,7 +40,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-xl font-semibold font-headline">Our Hub</h3>
                 <p className="text-muted-foreground">While we often meet online, you can find us at our physical hub for scheduled events.</p>
-                <p className="text-muted-foreground mt-1">123 Tech Avenue, Calabar, Nigeria</p>
+                <p className="text-muted-foreground mt-1">EtaAgbor, Calabar, Nigeria</p>
               </div>
             </div>
             
