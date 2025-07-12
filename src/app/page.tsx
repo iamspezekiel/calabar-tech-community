@@ -86,7 +86,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white overflow-hidden">
           <Image
-              src="https://i.ibb.co/992fSw6p/IMG-2232.jpg"
+              src="https://i.ibb.co/hxTYvhn1/IMG-6884.jpg"
               alt="Community event background"
               layout="fill"
               objectFit="cover"
