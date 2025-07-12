@@ -33,7 +33,7 @@ export function Partners() {
                             alt={partner.name}
                             width={140}
                             height={50}
-                            className="grayscale hover:grayscale-0 transition-all duration-300 object-contain"
+                            className="transition-all duration-300 object-contain"
                             data-ai-hint={partner.dataAiHint}
                         />
                     </li>
