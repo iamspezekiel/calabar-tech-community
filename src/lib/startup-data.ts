@@ -55,5 +55,13 @@ export const startups = [
     dataAiHint: 'link management',
     tags: ['SaaS', 'Utility', 'URL Shortener'],
     url: 'https://isabi.click',
+  },
+  {
+    title: 'IsabiRead',
+    description: 'An innovative platform for readers and content creators.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'ebook reader',
+    tags: ['EdTech', 'Reading', 'Content'],
+    url: 'https://www.isabiread.icu',
   }
 ];
