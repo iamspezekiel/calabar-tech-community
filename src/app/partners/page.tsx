@@ -37,7 +37,7 @@ export default function PartnersPage() {
             <CardContent className="text-center">
                 <Button asChild size="lg">
                     <Link href="/donate">
-                        Learn More About Sponsorship <ArrowRight className="ml-2 h-5 w-5" />
+                        Partnership and Sponsorship <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                 </Button>
             </CardContent>
