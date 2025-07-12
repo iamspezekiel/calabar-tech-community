@@ -1,3 +1,4 @@
+
 export default function TermsOfUsePage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl">
@@ -37,7 +38,7 @@ export default function TermsOfUsePage() {
 
         <h2 className="text-foreground">7. Contact Us</h2>
         <p>
-          If you have any questions about these Terms of Use, please contact us at: <a href="mailto:legal@calabartech.community" className="text-accent">legal@calabartech.community</a>.
+          If you have any questions about these Terms of Use, please contact us at: <a href="mailto:legal@calabartechcommunity.com" className="text-accent">legal@calabartechcommunity.com</a>.
         </p>
       </div>
     </div>

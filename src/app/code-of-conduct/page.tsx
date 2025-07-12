@@ -1,3 +1,4 @@
+
 export default function CodeOfConductPage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl">
@@ -47,7 +48,7 @@ export default function CodeOfConductPage() {
 
         <h2 className="text-foreground">5. Enforcement</h2>
         <p>
-          Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at <a href="mailto:conduct@calabartech.community" className="text-accent">conduct@calabartech.community</a>. All complaints will be reviewed and investigated promptly and fairly.
+          Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at <a href="mailto:conduct@calabartechcommunity.com" className="text-accent">conduct@calabartechcommunity.com</a>. All complaints will be reviewed and investigated promptly and fairly.
         </p>
         <p>
           All community leaders are obligated to respect the privacy and security of the reporter of any incident.

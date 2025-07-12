@@ -1,3 +1,4 @@
+
 export default function PrivacyPolicyPage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl">
@@ -54,7 +55,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="text-foreground">5. Contact Us</h2>
         <p>
-          If you have questions or comments about this Privacy Policy, please contact us at: <a href="mailto:privacy@calabartech.community" className="text-accent">privacy@calabartech.community</a>.
+          If you have questions or comments about this Privacy Policy, please contact us at: <a href="mailto:privacy@calabartechcommunity.com" className="text-accent">privacy@calabartechcommunity.com</a>.
         </p>
       </div>
     </div>

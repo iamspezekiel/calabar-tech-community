@@ -1,3 +1,4 @@
+
 import { ContactForm } from '@/components/contact-form';
 import { Mail, Users, MapPin, Twitter, Linkedin, Facebook } from 'lucide-react';
 
@@ -26,8 +27,8 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-xl font-semibold font-headline">Email</h3>
                 <p className="text-muted-foreground">Our inbox is always open. We'll get back to you as soon as we can.</p>
-                <a href="mailto:hello@calabartech.community" className="text-accent hover:underline mt-1 block">
-                  hello@calabartech.community
+                <a href="mailto:hello@calabartechcommunity.com" className="text-accent hover:underline mt-1 block">
+                  hello@calabartechcommunity.com
                 </a>
               </div>
             </div>
