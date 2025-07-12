@@ -25,6 +25,7 @@ import { Separator } from '@/components/ui/separator';
 import { blogPosts } from '@/lib/blog-data';
 import { startups } from '@/lib/startup-data';
 import { upcomingEvents } from '@/lib/event-data';
+import { galleryImages } from '@/lib/gallery-data';
 
 const faqs = [
   {
@@ -47,17 +48,6 @@ const faqs = [
     question: "What kind of events does the Calabar Tech Community organize?",
     answer: "The Calabar Tech Community organizes a variety of events, including hackathons, workshops, meetups, and conferences. These events cover topics such as programming, entrepreneurship, data science, artificial intelligence, and blockchain.",
   },
-];
-
-const galleryImages = [
-    { src: 'https://i.ibb.co/LzvfCRVx/m-93.jpg', alt: 'A community member presenting at a meetup', dataAiHint: 'tech workshop' },
-    { src: 'https://i.ibb.co/G4kvcRWG/m-43.jpg', alt: 'Members collaborating during a workshop', dataAiHint: 'presentation' },
-    { src: 'https://i.ibb.co/wZrk6yyY/m-194.jpg', alt: 'Speaker engaging with the audience', dataAiHint: 'tech conference' },
-    { src: 'https://i.ibb.co/FLGdbkxn/m-219.jpg', alt: 'Intense focus during a coding session', dataAiHint: 'people collaborating' },
-    { src: 'https://i.ibb.co/8DH77CyR/IMG-2246.jpg', alt: 'Networking and discussion at an event', dataAiHint: 'community photo' },
-    { src: 'https://i.ibb.co/MKsyFfw/MG-6853.jpg', alt: 'A wide shot of a community gathering', dataAiHint: 'people smiling' },
-    { src: 'https://i.ibb.co/zV38SPsy/1733205180094.jpg', alt: 'A community member presenting at a meetup', dataAiHint: 'people coding' },
-    { src: 'https://i.ibb.co/1GYncg6b/IMG-2095.jpg', alt: 'Members collaborating during a workshop', dataAiHint: 'workshop' },
 ];
 
 export default function Home() {
@@ -88,6 +78,8 @@ export default function Home() {
   const recentPost = blogPosts[0];
   const featuredStartup = startups[0];
   const upcomingEvent = upcomingEvents[0];
+  const homeGalleryImages = galleryImages.slice(0, 8);
+
 
   return (
     <div className="flex flex-col min-h-dvh">
@@ -242,7 +234,7 @@ export default function Home() {
                 className="w-full max-w-6xl mx-auto"
               >
                 <CarouselContent>
-                  {galleryImages.map((image, index) => (
+                  {homeGalleryImages.map((image, index) => (
                     <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                       <div className="p-1">
                         <div className="overflow-hidden rounded-lg shadow-lg aspect-video">
