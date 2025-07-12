@@ -304,7 +304,7 @@ export default function Home() {
           </div>
         </section>
 
-        <Partners />
+        <Partners animated={true} />
         
         <div className="container mx-auto px-4">
           <Separator />

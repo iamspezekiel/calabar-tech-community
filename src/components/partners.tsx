@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 const partners = [
   { name: 'Partner 2', logo: 'https://i.ibb.co/x8Fg3XjL/20250206-043253-1536x597.png', dataAiHint: 'partner logo' },
@@ -18,7 +19,88 @@ const sponsors = [
   { name: 'Sponsor 6', logo: 'https://i.ibb.co/9HVyPnJG/20250712-050257.png', dataAiHint: 'sponsor logo' },
 ];
 
-export function Partners() {
+
+export function Partners({ animated = false }: { animated?: boolean }) {
+  const allPartners = [...partners, ...partners]; // Duplicate for smooth scroll
+  const allSponsors = [...sponsors, ...sponsors]; // Duplicate for smooth scroll
+
+  if (animated) {
+    return (
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Our Partners</h2>
+          <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
+            We are grateful for the support of our partners who help make our community thrive.
+          </p>
+          <div className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+            <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
+              {allPartners.map((partner, index) => (
+                <li key={index}>
+                   <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={140}
+                    height={70}
+                    className="object-contain"
+                    data-ai-hint={partner.dataAiHint}
+                  />
+                </li>
+              ))}
+            </ul>
+             <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+              {allPartners.map((partner, index) => (
+                <li key={index}>
+                   <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={140}
+                    height={70}
+                    className="object-contain"
+                    data-ai-hint={partner.dataAiHint}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary mt-20">Our Sponsors</h2>
+          <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
+            We are also grateful for the support of our sponsors.
+          </p>
+          <div className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+            <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll-reverse">
+              {allSponsors.map((sponsor, index) => (
+                <li key={index}>
+                   <Image
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    width={140}
+                    height={70}
+                    className="object-contain"
+                    data-ai-hint={sponsor.dataAiHint}
+                  />
+                </li>
+              ))}
+            </ul>
+             <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll-reverse" aria-hidden="true">
+              {allSponsors.map((sponsor, index) => (
+                <li key={index}>
+                   <Image
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    width={140}
+                    height={70}
+                    className="object-contain"
+                    data-ai-hint={sponsor.dataAiHint}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
