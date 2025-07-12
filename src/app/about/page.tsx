@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -112,29 +113,16 @@ export default function AboutPage() {
           A journey of passion, growth, and community impact since 2018.
         </p>
         <div className="mt-12 max-w-4xl mx-auto">
-          <div className="relative">
-            <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border"></div>
+          <div className="relative border-l-2 border-primary/20">
             {historyMilestones.map((milestone, index) => (
-              <div key={index} className="relative mb-12">
-                <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-background border-2 border-primary rounded-full flex items-center justify-center">
-                  <Milestone className="w-4 h-4 text-primary" />
+              <div key={index} className="mb-12 ml-6">
+                <div className="absolute -left-[11px] mt-1.5 h-5 w-5 rounded-full bg-primary flex items-center justify-center ring-8 ring-background">
+                  <Milestone className="w-3 h-3 text-primary-foreground" />
                 </div>
-                <div className={`flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                  <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
-                    <p className="text-2xl font-bold font-headline text-primary">{milestone.year}</p>
-                  </div>
-                </div>
-                <div className={`flex ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
-                  <div className="w-5/12">
-                    <Card className={`shadow-lg ${index % 2 === 0 ? 'ml-8' : 'mr-8'}`}>
-                        <CardHeader>
-                            <CardTitle>{milestone.title}</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <p className="text-muted-foreground">{milestone.description}</p>
-                        </CardContent>
-                    </Card>
-                  </div>
+                <div className="p-6 rounded-lg border bg-card shadow-sm hover:shadow-lg transition-shadow">
+                  <p className="text-sm font-semibold text-accent">{milestone.year}</p>
+                  <h3 className="text-xl font-bold font-headline mt-1">{milestone.title}</h3>
+                  <p className="mt-2 text-muted-foreground">{milestone.description}</p>
                 </div>
               </div>
             ))}
