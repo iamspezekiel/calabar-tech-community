@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 
 const partners = [
-  { name: 'Partner 1', logo: 'https://i.ibb.co/23B5pmFs/20240120-080058.png', dataAiHint: 'partner logo' },
   { name: 'Partner 2', logo: 'https://i.ibb.co/x8Fg3XjL/20250206-043253-1536x597.png', dataAiHint: 'partner logo' },
   { name: 'Partner 3', logo: 'https://i.ibb.co/1tc8y0sy/20250206-043323-1536x597.png', dataAiHint: 'partner logo' },
   { name: 'Partner 4', logo: 'https://i.ibb.co/LDksMQfP/20250206-043403-1536x597.png', dataAiHint: 'partner logo' },
