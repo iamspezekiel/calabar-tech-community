@@ -27,7 +27,7 @@ export default function PartnersPage() {
                         <Building className="h-10 w-10 text-primary" />
                     </div>
                     <div>
-                        <CardTitle className="text-2xl md:text-3xl font-headline">Become a Partner</CardTitle>
+                        <CardTitle className="text-2xl md:text-3xl font-headline">Become a Partner or Sponsor</CardTitle>
                         <CardDescription className="mt-2 text-base">
                             Join us in building the future of tech in Calabar. Your sponsorship helps us fund workshops, secure event venues, and provide essential resources to our growing community.
                         </CardDescription>
