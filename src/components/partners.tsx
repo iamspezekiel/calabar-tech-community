@@ -17,7 +17,6 @@ const sponsors = [
   { name: 'Sponsor 4', logo: 'https://i.ibb.co/5hfLc6SQ/20250712-044005.png', dataAiHint: 'sponsor logo' },
   { name: 'Sponsor 5', logo: 'https://i.ibb.co/4gdQcJzX/20250712-044210.png', dataAiHint: 'sponsor logo' },
   { name: 'Sponsor 6', logo: 'https://i.ibb.co/9HVyPnJG/20250712-050257.png', dataAiHint: 'sponsor logo' },
-  { name: 'Sponsor 7', logo: 'https://i.ibb.co/9HVyPnJG/20250712-050257.png', dataAiHint: 'sponsor logo' },
 ];
 
 export function Partners() {
