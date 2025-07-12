@@ -23,6 +23,7 @@ import {
 import { Partners } from '@/components/partners';
 import { Separator } from '@/components/ui/separator';
 import { blogPosts } from '@/lib/blog-data';
+import { startups } from '@/lib/startup-data';
 
 const faqs = [
   {
@@ -84,6 +85,7 @@ export default function Home() {
   ];
 
   const recentPost = blogPosts[0];
+  const featuredStartup = startups[0];
 
   return (
     <div className="flex flex-col min-h-dvh">
@@ -210,9 +212,9 @@ export default function Home() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <Image src="https://i.ibb.co/9BBW8Q8/IMG-2228.jpg" alt="Project" width={600} height={400} className="rounded-lg mb-4" data-ai-hint="collaboration interface" />
-                  <h3 className="text-xl font-semibold font-headline">Local Business Directory</h3>
-                  <p className="text-muted-foreground mt-2">An open-source platform to help discover and promote local businesses in Calabar.</p>
+                  <Image src={featuredStartup.image} alt={featuredStartup.title} width={600} height={400} className="rounded-lg mb-4" data-ai-hint={featuredStartup.dataAiHint} />
+                  <h3 className="text-xl font-semibold font-headline">{featuredStartup.title}</h3>
+                  <p className="text-muted-foreground mt-2">{featuredStartup.description}</p>
                    <Button asChild variant="link" className="px-0 mt-4">
                     <Link href="/startups">View Startups <ArrowRight className="ml-2" /></Link>
                   </Button>
