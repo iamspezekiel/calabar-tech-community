@@ -71,5 +71,13 @@ export const startups = [
     dataAiHint: 'food delivery',
     tags: ['FoodTech', 'E-commerce', 'Delivery'],
     url: 'https://chopfoods.online',
+  },
+  {
+    title: 'Gadlock',
+    description: 'An innovative platform offering a range of digital services.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'digital services',
+    tags: ['SaaS', 'Digital', 'Technology'],
+    url: 'https://gadlock.com',
   }
 ];
