@@ -12,6 +12,7 @@ const partners = [
   { name: 'Partner 9', logo: 'https://i.ibb.co/1YRSwr0K/20250712-043850.png', dataAiHint: 'partner logo' },
   { name: 'Partner 10', logo: 'https://i.ibb.co/5hfLc6SQ/20250712-044005.png', dataAiHint: 'partner logo' },
   { name: 'Partner 11', logo: 'https://i.ibb.co/4gdQcJzX/20250712-044210.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 12', logo: 'https://i.ibb.co/9HVyPnJG/20250712-050257.png', dataAiHint: 'partner logo' },
 ];
 
 const duplicatedPartners = [...partners, ...partners]; // Duplicate for seamless loop
