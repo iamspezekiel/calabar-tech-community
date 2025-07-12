@@ -18,7 +18,7 @@ export function Footer() {
     ],
     'Get Involved': [
       { name: 'Donate', href: '/donate' },
-      { name: 'Partners', href: '/about' },
+      { name: 'Partners', href: '/partners' },
       { name: 'Sponsor', href: '/donate' },
       { name: 'Volunteer', href: '/volunteer' },
     ],
