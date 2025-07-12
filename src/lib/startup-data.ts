@@ -47,8 +47,13 @@ export const startups = [
     dataAiHint: 'creator economy',
     tags: ['SaaS', 'Creators', 'Community'],
     url: 'https://creatorpass.net',
+  },
+  {
+    title: 'Isabi.click',
+    description: 'A simple and powerful URL shortening service.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'link management',
+    tags: ['SaaS', 'Utility', 'URL Shortener'],
+    url: 'https://isabi.click',
   }
 ];
-
-
-
