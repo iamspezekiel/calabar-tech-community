@@ -38,6 +38,30 @@ const startups = [
     tags: ['Python', 'NLTK', 'AI', 'Machine Learning'],
     githubUrl: '#',
   },
+  {
+    title: 'Isabivtu.com.ng',
+    description: 'A platform for seamless virtual top-up and bill payments. Making everyday transactions easier.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'fintech app',
+    tags: ['FinTech', 'E-commerce', 'Mobile Payments'],
+    githubUrl: '#',
+  },
+  {
+    title: 'isabiwp.com.ng',
+    description: 'Specialized WordPress services, offering custom themes, plugins, and performance optimization.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'wordpress development',
+    tags: ['WordPress', 'PHP', 'Web Development'],
+    githubUrl: '#',
+  },
+  {
+    title: 'isabipay.com.ng',
+    description: 'A secure and reliable payment gateway solution for businesses in Nigeria.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'payment gateway',
+    tags: ['Payment', 'API', 'Security'],
+    githubUrl: '#',
+  },
 ];
 
 export default function StartupsPage() {
