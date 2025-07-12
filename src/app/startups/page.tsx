@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -14,13 +15,6 @@ export default function StartupsPage() {
         <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
           Explore the innovative ventures born from our vibrant community. From open-source projects to market-ready applications, discover the next wave of Calabar-based innovation and investment opportunities.
         </p>
-        <div className="mt-8 flex justify-center">
-            <Button asChild size="lg">
-                <Link href="/contact">
-                    Get Involved <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-            </Button>
-        </div>
       </section>
 
       <section className="mt-16">
@@ -49,6 +43,18 @@ export default function StartupsPage() {
               </CardFooter>
             </Card>
           ))}
+        </div>
+      </section>
+
+      <section className="mt-20 text-center">
+        <h2 className="text-2xl font-bold font-headline text-primary">Have a Project or Idea?</h2>
+        <p className="mt-2 text-muted-foreground">We'd love to hear from you and see how we can support your vision.</p>
+        <div className="mt-8 flex justify-center">
+            <Button asChild size="lg">
+                <Link href="/contact">
+                    Get Involved <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+            </Button>
         </div>
       </section>
     </div>
