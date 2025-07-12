@@ -51,9 +51,9 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold font-headline">Social Media</h3>
                 <p className="text-muted-foreground">Follow us on social media to stay updated with our latest news and events.</p>
                 <div className="flex space-x-4 mt-2">
-                    <a href="#" className="text-accent hover:underline">Twitter</a>
-                    <a href="#" className="text-accent hover:underline">LinkedIn</a>
-                    <a href="#" className="text-accent hover:underline">GitHub</a>
+                    <a href="https://twitter.com/tech_calabar" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Twitter</a>
+                    <a href="https://www.linkedin.com/company/calabar-tech-community/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">LinkedIn</a>
+                    <a href="https://facebook.com/techCalabar" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Facebook</a>
                 </div>
               </div>
             </div>
