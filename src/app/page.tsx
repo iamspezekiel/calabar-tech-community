@@ -47,13 +47,14 @@ const faqs = [
 ];
 
 const galleryImages = [
-  { src: 'https://i.ibb.co/hx6Pt3RS/IMG-2233.jpg', alt: 'Community event photo 1', dataAiHint: 'tech meetup' },
-  { src: 'https://i.ibb.co/7JVTLgPS/IMG-2232.jpg', alt: 'Community event photo 2', dataAiHint: 'people coding' },
-  { src: 'https://i.ibb.co/pv5h2Th7/IMG-2231.jpg', alt: 'Community event photo 3', dataAiHint: 'speaker presentation' },
-  { src: 'https://i.ibb.co/VYLZ7QZR/IMG-2230.jpg', alt: 'Community event photo 4', dataAiHint: 'group discussion' },
-  { src: 'https://i.ibb.co/9BBW8Q8/IMG-2228.jpg', alt: 'Community event photo 5', dataAiHint: 'workshop learning' },
-  { src: 'https://i.ibb.co/hxTYvhn1/IMG-6884.jpg', alt: 'Community event photo 6', dataAiHint: 'hackathon team' },
-  { src: 'https://i.ibb.co/ns96gZj9/IMG-6883.jpg', alt: 'Community event photo 7', dataAiHint: 'networking event' },
+    { src: 'https://i.ibb.co/LzvfCRVx/m-93.jpg', alt: 'm-93', dataAiHint: 'tech workshop' },
+    { src: 'https://i.ibb.co/G4kvcRWG/m-43.jpg', alt: 'm-43', dataAiHint: 'presentation' },
+    { src: 'https://i.ibb.co/wZrk6yyY/m-194.jpg', alt: 'm-194', dataAiHint: 'tech conference' },
+    { src: 'https://i.ibb.co/FLGdbkxn/m-219.jpg', alt: 'm-219', dataAiHint: 'people collaborating' },
+    { src: 'https://i.ibb.co/8DH77CyR/IMG-2246.jpg', alt: 'IMG-2246', dataAiHint: 'community photo' },
+    { src: 'https://i.ibb.co/MKsyFfw/MG-6853.jpg', alt: 'MG-6853', dataAiHint: 'people smiling' },
+    { src: 'https://i.ibb.co/zV38SPsy/1733205180094.jpg', alt: '1733205180094', dataAiHint: 'people coding' },
+    { src: 'https://i.ibb.co/1GYncg6b/IMG-2095.jpg', alt: 'IMG-2095', dataAiHint: 'workshop' },
 ];
 
 export default function Home() {
@@ -340,4 +341,5 @@ export default function Home() {
   );
 }
 
+    
     
