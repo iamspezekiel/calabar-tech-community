@@ -26,10 +26,10 @@ export const startups = [
   },
   {
     title: 'Inwang',
-    description: 'An innovative platform providing valuable services to the community.',
+    description: 'Connecting Buyers to Farmers Across Africa',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'startup logo',
-    tags: ['Technology', 'Community'],
+    tags: ['Technology', 'Community', 'AgriTech'],
     url: 'https://www.iwang.ng',
   },
   {
