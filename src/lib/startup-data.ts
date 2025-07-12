@@ -63,5 +63,13 @@ export const startups = [
     dataAiHint: 'ebook reader',
     tags: ['EdTech', 'Reading', 'Content'],
     url: 'https://www.isabiread.icu',
+  },
+  {
+    title: 'Chopfoods',
+    description: 'An online platform for food ordering and delivery services.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'food delivery',
+    tags: ['FoodTech', 'E-commerce', 'Delivery'],
+    url: 'https://chopfoods.online',
   }
 ];
