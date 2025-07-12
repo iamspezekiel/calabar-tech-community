@@ -4,9 +4,9 @@ import { Logo } from '@/components/logo';
 
 export function Footer() {
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
+    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/techCalabar' },
+    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/tech_calabar' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/calabar-tech-community/' },
   ];
 
   const footerLinks = {
