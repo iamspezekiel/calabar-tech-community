@@ -16,7 +16,7 @@ export function Footer() {
       { name: 'Our Events', href: '/events' },
       { name: 'Our Gallery', href: '/gallery' },
     ],
-    Contribute: [
+    'Get Involved': [
       { name: 'Donate', href: '/donate' },
       { name: 'Startups', href: '/startups' },
       { name: 'Sponsor', href: '/donate' },
