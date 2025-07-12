@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle, Building, Heart } from 'lucide-react';
@@ -44,7 +45,7 @@ export default function DonatePage() {
               </div>
               <p className="my-4">Or use a secure payment link:</p>
               <Button asChild size="lg" className="w-full">
-                <Link href="#">Donate via Paystack</Link>
+                <Link href="#">Donate online</Link>
               </Button>
             </CardContent>
           </Card>
