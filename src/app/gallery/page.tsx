@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Skeleton } from '@/components/ui/skeleton';
 import {
   Carousel,
@@ -16,17 +16,17 @@ import { Maximize } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const galleryImages = [
-  { src: 'https://i.ibb.co/hxTYvhn1/IMG-6884.jpg', alt: 'Calabar Tech Community group photo', dataAiHint: 'hackathon team' },
-  { src: 'https://i.ibb.co/hx6Pt3RS/IMG-2233.jpg', alt: 'A community member presenting at a meetup', dataAiHint: 'tech meetup' },
-  { src: 'https://i.ibb.co/7JVTLgPS/IMG-2232.jpg', alt: 'Members collaborating during a workshop', dataAiHint: 'people coding' },
-  { src: 'https://i.ibb.co/pv5h2Th7/IMG-2231.jpg', alt: 'Speaker engaging with the audience', dataAiHint: 'speaker presentation' },
-  { src: 'https://i.ibb.co/VYLZ7QZR/IMG-2230.jpg', alt: 'Intense focus during a coding session', dataAiHint: 'group discussion' },
-  { src: 'https://i.ibb.co/9BBW8Q8/IMG-2228.jpg', alt: 'Networking and discussion at an event', dataAiHint: 'workshop learning' },
-  { src: 'https://i.ibb.co/ns96gZj9/IMG-6883.jpg', alt: 'A wide shot of a community gathering', dataAiHint: 'networking event' },
-  { src: 'https://i.ibb.co/d4mBfzLf/IMG-2233.jpg', alt: 'Panel discussion with industry experts', dataAiHint: 'women in tech' },
-  { src: 'https://i.ibb.co/cXXYt5Hb/IMG-2232.jpg', alt: 'Close-up of a member working on a laptop', dataAiHint: 'coding on laptop' },
-  { src: 'https://i.ibb.co/cS3pYTVT/IMG-2230.jpg', alt: 'A presenter at a tech talk', dataAiHint: 'conference stage' },
-  { src: 'https://i.ibb.co/XrGsc0vw/IMG-2231.jpg', alt: 'Group of attendees at a meetup', dataAiHint: 'audience conference' },
+    { src: 'https://i.ibb.co/hxTYvhn1/IMG-6884.jpg', alt: 'Calabar Tech Community group photo', dataAiHint: 'hackathon team' },
+    { src: 'https://i.ibb.co/hx6Pt3RS/IMG-2233.jpg', alt: 'A community member presenting at a meetup', dataAiHint: 'tech meetup' },
+    { src: 'https://i.ibb.co/7JVTLgPS/IMG-2232.jpg', alt: 'Members collaborating during a workshop', dataAiHint: 'people coding' },
+    { src: 'https://i.ibb.co/pv5h2Th7/IMG-2231.jpg', alt: 'Speaker engaging with the audience', dataAiHint: 'speaker presentation' },
+    { src: 'https://i.ibb.co/VYLZ7QZR/IMG-2230.jpg', alt: 'Intense focus during a coding session', dataAiHint: 'group discussion' },
+    { src: 'https://i.ibb.co/9BBW8Q8/IMG-2228.jpg', alt: 'Networking and discussion at an event', dataAiHint: 'workshop learning' },
+    { src: 'https://i.ibb.co/ns96gZj9/IMG-6883.jpg', alt: 'A wide shot of a community gathering', dataAiHint: 'networking event' },
+    { src: 'https://i.ibb.co/d4mBfzLf/IMG-2233.jpg', alt: 'Panel discussion with industry experts', dataAiHint: 'women in tech' },
+    { src: 'https://i.ibb.co/cXXYt5Hb/IMG-2232.jpg', alt: 'Close-up of a member working on a laptop', dataAiHint: 'coding on laptop' },
+    { src: 'https://i.ibb.co/cS3pYTVT/IMG-2230.jpg', alt: 'A presenter at a tech talk', dataAiHint: 'conference stage' },
+    { src: 'https://i.ibb.co/XrGsc0vw/IMG-2231.jpg', alt: 'Group of attendees at a meetup', dataAiHint: 'audience conference' },
 ];
 
 
@@ -90,6 +90,10 @@ export default function GalleryPage() {
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-6xl w-full p-2 bg-transparent border-0">
+          <DialogTitle className="sr-only">Image Gallery Lightbox</DialogTitle>
+          <DialogDescription className="sr-only">
+            A carousel of images from the gallery. Use the next and previous buttons to navigate.
+          </DialogDescription>
           <Carousel
             opts={{
               startIndex: selectedIndex,
@@ -106,7 +110,7 @@ export default function GalleryPage() {
                       alt={image.alt}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      objectFit="contain"
+                      style={{objectFit: 'contain'}}
                       className="rounded-lg"
                       data-ai-hint={image.dataAiHint}
                     />
