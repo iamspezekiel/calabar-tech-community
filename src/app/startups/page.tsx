@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, Github } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -12,7 +12,7 @@ const startups = [
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'website interface',
     tags: ['Next.js', 'React', 'Tailwind CSS'],
-    githubUrl: '#',
+    url: '#',
   },
   {
     title: 'Local Business Directory',
@@ -20,7 +20,7 @@ const startups = [
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'map application',
     tags: ['React Native', 'Node.js', 'MongoDB', 'Open Source'],
-    githubUrl: '#',
+    url: '#',
   },
   {
     title: 'Event Management System',
@@ -28,7 +28,7 @@ const startups = [
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'dashboard analytics',
     tags: ['Python', 'Django', 'PostgreSQL'],
-    githubUrl: '#',
+    url: '#',
   },
   {
     title: 'AI-Powered Chatbot',
@@ -36,7 +36,7 @@ const startups = [
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'chatbot interface',
     tags: ['Python', 'NLTK', 'AI', 'Machine Learning'],
-    githubUrl: '#',
+    url: '#',
   },
   {
     title: 'Isabivtu.com.ng',
@@ -44,7 +44,7 @@ const startups = [
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'fintech app',
     tags: ['FinTech', 'E-commerce', 'Mobile Payments'],
-    githubUrl: '#',
+    url: '#',
   },
   {
     title: 'isabiwp.com.ng',
@@ -52,7 +52,7 @@ const startups = [
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'wordpress development',
     tags: ['WordPress', 'PHP', 'Web Development'],
-    githubUrl: '#',
+    url: '#',
   },
   {
     title: 'isabipay.com.ng',
@@ -60,7 +60,7 @@ const startups = [
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'payment gateway',
     tags: ['Payment', 'API', 'Security'],
-    githubUrl: '#',
+    url: '#',
   },
 ];
 
@@ -99,9 +99,9 @@ export default function StartupsPage() {
               </CardContent>
               <CardFooter className="p-6 pt-0">
                 <Button asChild variant="outline" className="w-full">
-                  <a href={startup.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    View on GitHub
+                  <a href={startup.url} target="_blank" rel="noopener noreferrer">
+                    View Startup
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </CardFooter>
