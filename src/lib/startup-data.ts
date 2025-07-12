@@ -32,5 +32,14 @@ export const startups = [
     tags: ['Technology', 'Community'],
     url: 'https://www.iwang.ng',
   },
+  {
+    title: 'Hack51 Africa',
+    description: 'An innovative platform fostering tech talent and solutions in Africa.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'tech community',
+    tags: ['Technology', 'Hackathon', 'Community'],
+    url: 'https://hack51.africa',
+  },
 ];
+
 
