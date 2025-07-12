@@ -24,4 +24,13 @@ export const startups = [
     tags: ['Payment', 'API', 'Gateway', 'Technology'],
     url: 'https://isabipay.com.ng',
   },
+  {
+    title: 'Inwang',
+    description: 'An innovative platform providing valuable services to the community.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'startup logo',
+    tags: ['Technology', 'Community'],
+    url: 'https://www.iwang.ng',
+  },
 ];
+
