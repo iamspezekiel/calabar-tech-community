@@ -87,5 +87,13 @@ export const startups = [
     dataAiHint: 'financial technology',
     tags: ['FinTech', 'Digital Wallet', 'Payments'],
     url: 'https://myaza.co',
+  },
+  {
+    title: 'IsabiPitch',
+    description: 'A platform for entrepreneurs to create and share pitch decks.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'presentation startup',
+    tags: ['SaaS', 'Startup', 'Pitch Deck'],
+    url: 'https://www.isabipitch.icu',
   }
 ];
