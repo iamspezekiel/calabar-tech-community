@@ -206,7 +206,7 @@ export default function Home() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <Image src="https://placehold.co/600x400.png" alt="Project" width={600} height={400} className="rounded-lg mb-4" data-ai-hint="collaboration interface" />
+                  <Image src="https://i.ibb.co/9BBW8Q8/IMG-2228.jpg" alt="Project" width={600} height={400} className="rounded-lg mb-4" data-ai-hint="collaboration interface" />
                   <h3 className="text-xl font-semibold font-headline">Open Source Contribution Drive</h3>
                   <p className="text-muted-foreground mt-2">Our community is actively contributing to open-source projects. Find out how you can get involved.</p>
                    <Button asChild variant="link" className="px-0 mt-4">
