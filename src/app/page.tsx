@@ -47,12 +47,13 @@ const faqs = [
 ];
 
 const galleryImages = [
-  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 1', dataAiHint: 'tech meetup' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 2', dataAiHint: 'people coding' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 3', dataAiHint: 'speaker presentation' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 4', dataAiHint: 'group discussion' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 5', dataAiHint: 'workshop learning' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 6', dataAiHint: 'hackathon team' },
+  { src: 'https://i.ibb.co/hx6Pt3RS/IMG-2233.jpg', alt: 'Community event photo 1', dataAiHint: 'tech meetup' },
+  { src: 'https://i.ibb.co/7JVTLgPS/IMG-2232.jpg', alt: 'Community event photo 2', dataAiHint: 'people coding' },
+  { src: 'https://i.ibb.co/pv5h2Th7/IMG-2231.jpg', alt: 'Community event photo 3', dataAiHint: 'speaker presentation' },
+  { src: 'https://i.ibb.co/VYLZ7QZR/IMG-2230.jpg', alt: 'Community event photo 4', dataAiHint: 'group discussion' },
+  { src: 'https://i.ibb.co/9BBW8Q8/IMG-2228.jpg', alt: 'Community event photo 5', dataAiHint: 'workshop learning' },
+  { src: 'https://i.ibb.co/hxTYvhn1/IMG-6884.jpg', alt: 'Community event photo 6', dataAiHint: 'hackathon team' },
+  { src: 'https://i.ibb.co/ns96gZj9/IMG-6883.jpg', alt: 'Community event photo 7', dataAiHint: 'networking event' },
 ];
 
 export default function Home() {
