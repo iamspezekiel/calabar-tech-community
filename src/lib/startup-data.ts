@@ -40,6 +40,15 @@ export const startups = [
     tags: ['Technology', 'Hackathon', 'Community'],
     url: 'https://hack51.africa',
   },
+  {
+    title: 'CreatorPass',
+    description: 'A platform for creators to manage their content and engage with their audience.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'creator economy',
+    tags: ['SaaS', 'Creators', 'Community'],
+    url: 'https://creatorpass.net',
+  }
 ];
+
 
 
