@@ -1,12 +1,17 @@
 import Image from 'next/image';
 
 const partners = [
-  { name: 'Google', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Google logo' },
-  { name: 'Microsoft', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Microsoft logo' },
-  { name: 'Hosting Company', logo: 'https://placehold.co/150x60.png', dataAiHint: 'logo' },
-  { name: 'Paystack', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Paystack logo' },
-  { name: 'Andela', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Andela logo' },
-  { name: 'Flutterwave', logo: 'https://placehold.co/150x60.png', dataAiHint: 'Flutterwave logo' },
+  { name: 'Partner 1', logo: 'https://i.ibb.co/23B5pmFs/20240120-080058.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 2', logo: 'https://i.ibb.co/x8Fg3XjL/20250206-043253-1536x597.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 3', logo: 'https://i.ibb.co/1tc8y0sy/20250206-043323-1536x597.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 4', logo: 'https://i.ibb.co/LDksMQfP/20250206-043403-1536x597.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 5', logo: 'https://i.ibb.co/qLDTg2cT/20250206-053109-1536x597.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 6', logo: 'https://i.ibb.co/j94WxCv5/20250206-053159-1536x597.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 7', logo: 'https://i.ibb.co/xTgv3Fj/20250206-153858-1536x597.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 8', logo: 'https://i.ibb.co/Rtp9rK7/20250712-043738.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 9', logo: 'https://i.ibb.co/1YRSwr0K/20250712-043850.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 10', logo: 'https://i.ibb.co/5hfLc6SQ/20250712-044005.png', dataAiHint: 'partner logo' },
+  { name: 'Partner 11', logo: 'https://i.ibb.co/4gdQcJzX/20250712-044210.png', dataAiHint: 'partner logo' },
 ];
 
 const duplicatedPartners = [...partners, ...partners]; // Duplicate for seamless loop
@@ -28,7 +33,7 @@ export function Partners() {
                             alt={partner.name}
                             width={140}
                             height={50}
-                            className="grayscale hover:grayscale-0 transition-all duration-300"
+                            className="grayscale hover:grayscale-0 transition-all duration-300 object-contain"
                             data-ai-hint={partner.dataAiHint}
                         />
                     </li>
