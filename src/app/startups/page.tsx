@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const startups = [
   {
-    title: 'Isabivtu.com.ng',
+    title: 'IsabiVTU',
     description: 'A platform for seamless virtual top-up and bill payments. Making everyday transactions easier.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'fintech app',
@@ -15,7 +15,7 @@ const startups = [
     url: 'https://isabivtu.com.ng',
   },
   {
-    title: 'isabiwp.com.ng',
+    title: 'IsabiWP',
     description: 'Specialized WordPress services, offering custom themes, plugins, and performance optimization.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'wordpress development',
@@ -23,7 +23,7 @@ const startups = [
     url: 'https://isabiwp.com.ng',
   },
   {
-    title: 'isabipay.com.ng',
+    title: 'IsabiPay',
     description: 'A secure and reliable payment gateway solution for businesses in Nigeria.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'payment gateway',
@@ -42,7 +42,7 @@ export default function StartupsPage() {
         </p>
         <div className="mt-8 flex justify-center">
             <Button asChild size="lg">
-                <Link href="#">
+                <Link href="/contact">
                     Get Involved <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
             </Button>
