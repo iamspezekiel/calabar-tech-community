@@ -18,7 +18,7 @@ export function Footer() {
     ],
     Contribute: [
       { name: 'Donate', href: '/donate' },
-      { name: 'Projects', href: '/projects' },
+      { name: 'Startups', href: '/startups' },
       { name: 'Sponsor', href: '/donate' },
       { name: 'Volunteer', href: '/volunteer' },
     ],

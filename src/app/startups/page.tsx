@@ -5,7 +5,7 @@ import { ArrowRight, Github } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const projects = [
+const startups = [
   {
     title: 'Community Hub Website',
     description: 'The very website you are browsing! Built with Next.js and Tailwind CSS, it serves as our digital home.',
@@ -40,13 +40,13 @@ const projects = [
   },
 ];
 
-export default function ProjectsPage() {
+export default function StartupsPage() {
   return (
     <div className="container mx-auto px-4 py-16">
       <section className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">Community Projects</h1>
+        <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">Community Startups</h1>
         <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
-          Discover the innovative projects built by our community members. From open-source tools to impactful applications.
+          Discover the innovative startups and projects born from our community. From open-source tools to impactful applications.
         </p>
         <div className="mt-8 flex justify-center">
             <Button asChild size="lg">
@@ -59,23 +59,23 @@ export default function ProjectsPage() {
 
       <section className="mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <Card key={project.title} className="flex flex-col overflow-hidden hover:shadow-xl transition-shadow">
+          {startups.map((startup) => (
+            <Card key={startup.title} className="flex flex-col overflow-hidden hover:shadow-xl transition-shadow">
               <CardHeader className="p-0">
-                  <Image src={project.image} alt={project.title} width={600} height={400} className="w-full h-48 object-cover" data-ai-hint={project.dataAiHint}/>
+                  <Image src={startup.image} alt={startup.title} width={600} height={400} className="w-full h-48 object-cover" data-ai-hint={startup.dataAiHint}/>
               </CardHeader>
               <CardContent className="p-6 flex-grow">
-                <CardTitle className="font-headline">{project.title}</CardTitle>
-                <CardDescription className="mt-2">{project.description}</CardDescription>
+                <CardTitle className="font-headline">{startup.title}</CardTitle>
+                <CardDescription className="mt-2">{startup.description}</CardDescription>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
+                  {startup.tags.map((tag) => (
                     <Badge key={tag} variant="secondary">{tag}</Badge>
                   ))}
                 </div>
               </CardContent>
               <CardFooter className="p-6 pt-0">
                 <Button asChild variant="outline" className="w-full">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <a href={startup.githubUrl} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     View on GitHub
                   </a>

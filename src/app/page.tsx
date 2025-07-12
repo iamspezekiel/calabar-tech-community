@@ -47,14 +47,14 @@ const faqs = [
 ];
 
 const galleryImages = [
-    { src: 'https://i.ibb.co/LzvfCRVx/m-93.jpg', alt: 'm-93', dataAiHint: 'tech workshop' },
-    { src: 'https://i.ibb.co/G4kvcRWG/m-43.jpg', alt: 'm-43', dataAiHint: 'presentation' },
-    { src: 'https://i.ibb.co/wZrk6yyY/m-194.jpg', alt: 'm-194', dataAiHint: 'tech conference' },
-    { src: 'https://i.ibb.co/FLGdbkxn/m-219.jpg', alt: 'm-219', dataAiHint: 'people collaborating' },
-    { src: 'https://i.ibb.co/8DH77CyR/IMG-2246.jpg', alt: 'IMG-2246', dataAiHint: 'community photo' },
-    { src: 'https://i.ibb.co/MKsyFfw/MG-6853.jpg', alt: 'MG-6853', dataAiHint: 'people smiling' },
-    { src: 'https://i.ibb.co/zV38SPsy/1733205180094.jpg', alt: '1733205180094', dataAiHint: 'people coding' },
-    { src: 'https://i.ibb.co/1GYncg6b/IMG-2095.jpg', alt: 'IMG-2095', dataAiHint: 'workshop' },
+    { src: 'https://i.ibb.co/LzvfCRVx/m-93.jpg', alt: 'A community member presenting at a meetup', dataAiHint: 'tech workshop' },
+    { src: 'https://i.ibb.co/G4kvcRWG/m-43.jpg', alt: 'Members collaborating during a workshop', dataAiHint: 'presentation' },
+    { src: 'https://i.ibb.co/wZrk6yyY/m-194.jpg', alt: 'Speaker engaging with the audience', dataAiHint: 'tech conference' },
+    { src: 'https://i.ibb.co/FLGdbkxn/m-219.jpg', alt: 'Intense focus during a coding session', dataAiHint: 'people collaborating' },
+    { src: 'https://i.ibb.co/8DH77CyR/IMG-2246.jpg', alt: 'Networking and discussion at an event', dataAiHint: 'community photo' },
+    { src: 'https://i.ibb.co/MKsyFfw/MG-6853.jpg', alt: 'A wide shot of a community gathering', dataAiHint: 'people smiling' },
+    { src: 'https://i.ibb.co/zV38SPsy/1733205180094.jpg', alt: 'A community member presenting at a meetup', dataAiHint: 'people coding' },
+    { src: 'https://i.ibb.co/1GYncg6b/IMG-2095.jpg', alt: 'Members collaborating during a workshop', dataAiHint: 'workshop' },
 ];
 
 export default function Home() {
@@ -203,15 +203,15 @@ export default function Home() {
                     <div className="bg-accent/10 p-3 rounded-full">
                       <Users className="h-6 w-6 text-accent" />
                     </div>
-                    <CardTitle>Community Project</CardTitle>
+                    <CardTitle>Featured Startup</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <Image src="https://i.ibb.co/9BBW8Q8/IMG-2228.jpg" alt="Project" width={600} height={400} className="rounded-lg mb-4" data-ai-hint="collaboration interface" />
-                  <h3 className="text-xl font-semibold font-headline">Open Source Contribution Drive</h3>
-                  <p className="text-muted-foreground mt-2">Our community is actively contributing to open-source projects. Find out how you can get involved.</p>
+                  <h3 className="text-xl font-semibold font-headline">Local Business Directory</h3>
+                  <p className="text-muted-foreground mt-2">An open-source platform to help discover and promote local businesses in Calabar.</p>
                    <Button asChild variant="link" className="px-0 mt-4">
-                    <Link href="/projects">View Projects <ArrowRight className="ml-2" /></Link>
+                    <Link href="/startups">View Startups <ArrowRight className="ml-2" /></Link>
                   </Button>
                 </CardContent>
               </Card>
