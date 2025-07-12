@@ -55,15 +55,6 @@ const galleryImages = [
   { src: 'https://placehold.co/600x400.png', alt: 'Community event photo 6', dataAiHint: 'hackathon team' },
 ];
 
-const heroImages = [
-    { src: 'https://placehold.co/1920x1080.png', alt: 'Community collaboration', dataAiHint: 'people working together' },
-    { src: 'https://placehold.co/1920x1080.png', alt: 'Tech presentation', dataAiHint: 'conference speaker' },
-    { src: 'https://placehold.co/1920x1080.png', alt: 'Members networking', dataAiHint: 'professional networking' },
-    { src: 'https://placehold.co/1920x1080.png', alt: 'Coding workshop', dataAiHint: 'coding workshop' },
-    { src: 'https://placehold.co/1920x1080.png', alt: 'Team brainstorming', dataAiHint: 'team meeting' },
-];
-
-
 export default function Home() {
   const testimonials = [
     {
@@ -94,25 +85,14 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white overflow-hidden">
-            <Carousel
-                opts={{ loop: true }}
-                className="absolute inset-0 w-full h-full"
-            >
-                <CarouselContent className="h-full">
-                    {heroImages.map((image, index) => (
-                        <CarouselItem key={index} className="h-full">
-                            <Image
-                                src={image.src}
-                                alt={image.alt}
-                                layout="fill"
-                                objectFit="cover"
-                                className="w-full h-full"
-                                data-ai-hint={image.dataAiHint}
-                            />
-                        </CarouselItem>
-                    ))}
-                </CarouselContent>
-            </Carousel>
+          <Image
+              src="https://i.ibb.co/992fSw6p/IMG-2232.jpg"
+              alt="Community event background"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+              data-ai-hint="tech community event"
+          />
           <div className="absolute inset-0 bg-black/60"></div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white drop-shadow-md">
