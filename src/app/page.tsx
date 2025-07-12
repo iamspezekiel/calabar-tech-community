@@ -24,6 +24,7 @@ import { Partners } from '@/components/partners';
 import { Separator } from '@/components/ui/separator';
 import { blogPosts } from '@/lib/blog-data';
 import { startups } from '@/lib/startup-data';
+import { upcomingEvents } from '@/lib/event-data';
 
 const faqs = [
   {
@@ -86,6 +87,7 @@ export default function Home() {
 
   const recentPost = blogPosts[0];
   const featuredStartup = startups[0];
+  const upcomingEvent = upcomingEvents[0];
 
   return (
     <div className="flex flex-col min-h-dvh">
@@ -176,9 +178,9 @@ export default function Home() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <Image src="https://placehold.co/600x400.png" alt="Event" width={600} height={400} className="rounded-lg mb-4" data-ai-hint="tech meetup" />
-                  <h3 className="text-xl font-semibold font-headline">Monthly Tech Meetup</h3>
-                  <p className="text-muted-foreground mt-2">Join us for our monthly gathering of tech enthusiasts, developers, and designers.</p>
+                  <Image src={upcomingEvent.image} alt={upcomingEvent.title} width={600} height={400} className="rounded-lg mb-4" data-ai-hint={upcomingEvent.dataAiHint} />
+                  <h3 className="text-xl font-semibold font-headline">{upcomingEvent.title}</h3>
+                  <p className="text-muted-foreground mt-2">{upcomingEvent.description}</p>
                   <Button asChild variant="link" className="px-0 mt-4">
                     <Link href="/events">Learn More <ArrowRight className="ml-2" /></Link>
                   </Button>
