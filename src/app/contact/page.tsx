@@ -5,17 +5,17 @@ import { Mail, Users, MapPin, Twitter, Linkedin, Facebook } from 'lucide-react';
 export default function ContactPage() {
   return (
     <div className="bg-background">
-      <div className="container mx-auto px-4 py-16 md:py-24">
-        <section className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">Get in Touch</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+      <div className="container mx-auto px-4 py-12 md:py-24">
+        <section className="text-center mb-12 md:mb-16">
+          <h1 className="text-3xl md:text-5xl font-bold font-headline text-primary">Get in Touch</h1>
+          <p className="mt-4 text-base md:text-xl max-w-3xl mx-auto text-muted-foreground">
             Have a question, a project idea, or just want to say hello? We’d love to hear from you.
           </p>
         </section>
 
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div className="bg-card p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold font-headline text-primary mb-6">Send us a message</h2>
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+          <div className="bg-card p-6 md:p-8 rounded-lg shadow-lg">
+            <h2 className="text-xl md:text-2xl font-bold font-headline text-primary mb-6">Send us a message</h2>
             <ContactForm />
           </div>
           
@@ -25,7 +25,7 @@ export default function ContactPage() {
                 <Mail className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold font-headline">Email</h3>
+                <h3 className="text-lg md:text-xl font-semibold font-headline">Email</h3>
                 <p className="text-muted-foreground">Our inbox is always open. We'll get back to you as soon as we can.</p>
                 <a href="mailto:hello@calabartechcommunity.com" className="text-accent hover:underline mt-1 block">
                   hello@calabartechcommunity.com
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold font-headline">Our Hub</h3>
+                <h3 className="text-lg md:text-xl font-semibold font-headline">Our Hub</h3>
                 <p className="text-muted-foreground">While we often meet online, you can find us at our physical hub for scheduled events.</p>
                 <p className="text-muted-foreground mt-1">EtaAgbor, Calabar, Nigeria</p>
               </div>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <Users className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold font-headline">Social Media</h3>
+                <h3 className="text-lg md:text-xl font-semibold font-headline">Social Media</h3>
                 <p className="text-muted-foreground">Follow us on social media to stay updated with our latest news and events.</p>
                 <div className="flex space-x-4 mt-2">
                   <a href="https://facebook.com/techCalabar" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent">

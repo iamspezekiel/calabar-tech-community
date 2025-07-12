@@ -85,7 +85,7 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white overflow-hidden">
+        <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center text-white overflow-hidden">
           <Image
               src="https://i.ibb.co/hxTYvhn1/IMG-6884.jpg"
               alt="Community event background"
@@ -99,7 +99,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-white drop-shadow-md">
               Building the Future of Tech in Calabar.
             </h1>
-            <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-neutral-200 drop-shadow-sm">
+            <p className="mt-6 text-base md:text-xl max-w-3xl mx-auto text-neutral-200 drop-shadow-sm">
               Calabar Tech Community (CTC) is a grassroots movement fostering creativity, innovation, and a forward-thinking tech culture in Nigeria.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -124,15 +124,15 @@ export default function Home() {
                 <h2 className="mt-4 text-3xl md:text-4xl font-bold font-headline text-primary">
                   Empower, Educate, Innovate.
                 </h2>
-                <p className="mt-4 text-lg text-muted-foreground">
+                <p className="mt-4 text-base md:text-lg text-muted-foreground">
                   Our mission is to create a vibrant and inclusive tech ecosystem in Calabar. We provide a platform for learning, collaboration, and growth, empowering individuals to build innovative solutions and shape the future of technology in Africa.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
                 <Card className="text-center">
                   <CardHeader>
-                    <Users className="mx-auto h-10 w-10 text-accent" />
-                    <CardTitle className="text-4xl font-bold font-headline mt-2">
+                    <Users className="mx-auto h-8 w-8 md:h-10 md:w-10 text-accent" />
+                    <CardTitle className="text-3xl md:text-4xl font-bold font-headline mt-2">
                       <Counter target={500} suffix="+" />
                     </CardTitle>
                     <CardDescription>Community Members</CardDescription>
@@ -140,8 +140,8 @@ export default function Home() {
                 </Card>
                 <Card className="text-center">
                   <CardHeader>
-                    <Calendar className="mx-auto h-10 w-10 text-accent" />
-                    <CardTitle className="text-4xl font-bold font-headline mt-2">
+                    <Calendar className="mx-auto h-8 w-8 md:h-10 md:w-10 text-accent" />
+                    <CardTitle className="text-3xl md:text-4xl font-bold font-headline mt-2">
                        <Counter target={13} suffix="+" />
                     </CardTitle>
                     <CardDescription>Events Hosted</CardDescription>
@@ -156,7 +156,7 @@ export default function Home() {
         <section className="py-16 md:py-24 bg-card">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">What's Happening</h2>
-            <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
+            <p className="mt-4 text-base md:text-lg text-center text-muted-foreground max-w-2xl mx-auto">
               Stay updated with our latest events, articles, and community projects.
             </p>
             <div className="mt-12 grid md:grid-cols-3 gap-8">
@@ -222,7 +222,7 @@ export default function Home() {
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">Moments from Our Community</h2>
-            <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
+            <p className="mt-4 text-base md:text-lg text-center text-muted-foreground max-w-2xl mx-auto">
               A glimpse into our vibrant meetups, workshops, and collaborative sessions.
             </p>
             <div className="mt-12">
@@ -235,7 +235,7 @@ export default function Home() {
               >
                 <CarouselContent>
                   {homeGalleryImages.map((image, index) => (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem key={index} className="basis-full sm:basis-1/2 lg:basis-1/3">
                       <div className="p-1">
                         <div className="overflow-hidden rounded-lg shadow-lg aspect-video">
                           <Image
@@ -269,7 +269,7 @@ export default function Home() {
         <section className="py-16 md:py-24 bg-card">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center font-headline text-primary">From Our Community</h2>
-            <p className="mt-4 text-lg text-center text-muted-foreground max-w-2xl mx-auto">
+            <p className="mt-4 text-base md:text-lg text-center text-muted-foreground max-w-2xl mx-auto">
               Hear what our members have to say about their experience with CTC.
             </p>
             <Carousel
@@ -281,7 +281,7 @@ export default function Home() {
             >
               <CarouselContent>
                 {testimonials.map((testimonial, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem key={index} className="basis-full sm:basis-1/2 lg:basis-1/3">
                     <div className="p-1">
                       <Card>
                         <CardContent className="flex flex-col items-center text-center p-6">
@@ -315,7 +315,7 @@ export default function Home() {
           <div className="container mx-auto max-w-4xl px-4">
             <div className="text-center mb-12">
               <h2 className="mt-4 text-3xl md:text-4xl font-bold font-headline text-primary">Frequently Asked Questions</h2>
-              <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+              <p className="mt-4 text-base md:text-xl max-w-3xl mx-auto text-muted-foreground">
                 Have questions? We've got answers. If you can't find what you're looking for, feel free to contact us.
               </p>
             </div>
@@ -323,10 +323,10 @@ export default function Home() {
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger className="text-left text-lg hover:no-underline">
+                  <AccordionTrigger className="text-left text-base md:text-lg hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-base text-muted-foreground">
+                  <AccordionContent className="text-sm md:text-base text-muted-foreground">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

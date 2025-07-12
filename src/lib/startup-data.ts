@@ -1,14 +1,6 @@
 
 export const startups = [
   {
-    title: 'IsabiVTU Technology',
-    description: 'A platform for seamless virtual top-up and bill payments. Making everyday transactions easier.',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'fintech app',
-    tags: ['FinTech', 'Bill Payment', 'Mobile Wallet', 'Technology'],
-    url: 'https://isabivtu.com.ng',
-  },
-  {
     title: 'IsabiWP Cloud Nigeria',
     description: 'A web hosting provider providing premium web and cloud hosting solutions in Africa',
     image: 'https://placehold.co/600x400.png',
@@ -49,7 +41,7 @@ export const startups = [
     url: 'https://creatorpass.net',
   },
   {
-    title: 'Isabi.click',
+    title: 'IsabiClick Technology',
     description: 'A powerful URL shortening and management service.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'link management',
@@ -65,7 +57,7 @@ export const startups = [
     url: 'https://www.isabiread.icu',
   },
   {
-    title: 'Chopfoods',
+    title: 'Chopfoods Delivery',
     description: 'An online platform for food ordering and delivery services.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'food delivery',
@@ -89,11 +81,19 @@ export const startups = [
     url: 'https://myaza.co',
   },
   {
-    title: 'IsabiPitch',
+    title: 'IsabiPitch AI',
     description: 'A platform for entrepreneurs to create and share pitch decks.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'presentation startup',
     tags: ['SaaS', 'Startup', 'Pitch Deck'],
     url: 'https://www.isabipitch.icu',
+  },
+  {
+    title: 'IsabiVTU Technology',
+    description: 'A platform for seamless virtual top-up and bill payments. Making everyday transactions easier.',
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'fintech app',
+    tags: ['FinTech', 'Bill Payment', 'Mobile Wallet', 'Technology'],
+    url: 'https://isabivtu.com.ng',
   }
 ];
