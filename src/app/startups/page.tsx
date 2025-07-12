@@ -7,44 +7,12 @@ import Image from 'next/image';
 
 const startups = [
   {
-    title: 'Community Hub Website',
-    description: 'The very website you are browsing! Built with Next.js and Tailwind CSS, it serves as our digital home.',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'website interface',
-    tags: ['Next.js', 'React', 'Tailwind CSS'],
-    url: '#',
-  },
-  {
-    title: 'Local Business Directory',
-    description: 'An open-source platform to help discover and promote local businesses in Calabar.',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'map application',
-    tags: ['React Native', 'Node.js', 'MongoDB', 'Open Source'],
-    url: '#',
-  },
-  {
-    title: 'Event Management System',
-    description: 'A tool for managing community events, from registration to feedback collection.',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'dashboard analytics',
-    tags: ['Python', 'Django', 'PostgreSQL'],
-    url: '#',
-  },
-  {
-    title: 'AI-Powered Chatbot',
-    description: 'A chatbot to answer frequently asked questions about the Calabar tech scene and our community.',
-    image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'chatbot interface',
-    tags: ['Python', 'NLTK', 'AI', 'Machine Learning'],
-    url: '#',
-  },
-  {
     title: 'Isabivtu.com.ng',
     description: 'A platform for seamless virtual top-up and bill payments. Making everyday transactions easier.',
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'fintech app',
     tags: ['FinTech', 'E-commerce', 'Mobile Payments'],
-    url: '#',
+    url: 'https://isabivtu.com.ng',
   },
   {
     title: 'isabiwp.com.ng',
@@ -52,7 +20,7 @@ const startups = [
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'wordpress development',
     tags: ['WordPress', 'PHP', 'Web Development'],
-    url: '#',
+    url: 'https://isabiwp.com.ng',
   },
   {
     title: 'isabipay.com.ng',
@@ -60,7 +28,7 @@ const startups = [
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'payment gateway',
     tags: ['Payment', 'API', 'Security'],
-    url: '#',
+    url: 'https://isabipay.com.ng',
   },
 ];
 
