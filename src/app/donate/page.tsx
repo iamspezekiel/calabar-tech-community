@@ -43,7 +43,7 @@ export default function DonatePage() {
                 <p><strong>Account Name:</strong> Calabar Tech Community</p>
                 <p><strong>Account Number:</strong> 0123456789</p>
               </div>
-              <p className="my-4">Or use a secure payment link:</p>
+              <p className="my-4">Or use a secure online donation:</p>
               <Button asChild size="lg" className="w-full">
                 <Link href="#">Donate online</Link>
               </Button>
