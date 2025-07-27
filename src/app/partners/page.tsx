@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Partners } from '@/components/partners';
@@ -22,7 +23,7 @@ export default function PartnersPage() {
         <section className="mt-16">
           <Card className="max-w-4xl mx-auto shadow-lg bg-card/50">
             <CardHeader>
-                <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                <div className="flex flex-col items-center gap-6 text-center">
                     <div className="flex-shrink-0 bg-primary/10 p-4 rounded-full">
                         <Building className="h-10 w-10 text-primary" />
                     </div>
